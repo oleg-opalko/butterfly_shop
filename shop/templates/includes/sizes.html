@@ -1,0 +1,16 @@
+<div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__size">
+                                                {% for size in sizes %}
+                                                    <label for="{{ size.slug }}">{{ size.name }}
+                                                        <input type="radio" id="{{ size.slug }}">
+                                                    </label>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>

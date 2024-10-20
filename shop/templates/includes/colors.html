@@ -1,0 +1,16 @@
+<div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__color">
+                                                {% for color in colors %}
+                                                    <label class="{{ color.hex_code }}" style="background: {{ color.hex_code }}" for="{{ color.hex_code }}">
+                                                        <input type="radio" id="{{ color.hex_code }}">
+                                                    </label>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>

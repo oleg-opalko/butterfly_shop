@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'home.apps.HomeConfig',
     'ckeditor',
+    'colorfield'
 ]
 
 MIDDLEWARE = [
