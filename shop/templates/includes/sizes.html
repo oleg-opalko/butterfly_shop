@@ -1,16 +1,48 @@
 <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__size">
-                                                {% for size in sizes %}
-                                                    <label for="{{ size.slug }}">{{ size.name }}
-                                                        <input type="radio" id="{{ size.slug }}">
-                                                    </label>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="card-heading">
+        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+    </div>
+    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+            <div class="shop__sidebar__size">
+                {% for size in sizes %}
+                    <label for="{{ size.slug }}">{{ size.name }}
+                        <input type="radio" class="size-input" data-slug="{{ size.slug }}" id="{{ size.slug }}">
+                    </label>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        document.querySelectorAll('.size-input').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const size = this.dataset.slug;
+
+            fetch(`/shop/?size=${size}`, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                const productList = document.querySelector('#products-list');
+                const paginationBlock = document.querySelector('#pagination-block');
+                const productCount = document.querySelector('#product-count');
+
+                if (productList && paginationBlock) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    productList.innerHTML = doc.querySelector('#products-list').innerHTML;
+                    paginationBlock.innerHTML = doc.querySelector('#pagination-block').innerHTML;
+                    productCount.innerHTML = doc.querySelector('#product-count').innerHTML;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching products:', error);
+            });
+        });
+    });
+</script>

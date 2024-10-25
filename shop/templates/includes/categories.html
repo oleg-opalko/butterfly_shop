@@ -1,18 +1,52 @@
 <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__categories">
-                                                <ul class="nice-scroll">
-                                                    {% for category in categories %}
-                                                        <li>
-                                                            <a href="{% url 'product_list_by_category' category.slug %}">{{ category.name }} ({{ category.product_count }})</a>
-                                                        </li>
-                                                    {% endfor %}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="card-heading">
+        <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+            <div class="shop__sidebar__categories">
+                <ul class="nice-scroll">
+                    {% for category in categories %}
+                        <li>
+                            <a href="#" class="category-link" data-slug="{{ category.slug }}">
+                                {{ category.name }} ({{ category.product_count }})
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.category-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const categorySlug = this.dataset.slug;
+
+            fetch(`/shop/?category_slug=${categorySlug}`, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                const productList = document.querySelector('#products-list');
+                const paginationBlock = document.querySelector('#pagination-block');
+                const productCount = document.querySelector('#product-count');
+
+                if (productList && paginationBlock) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    productList.innerHTML = doc.querySelector('#products-list').innerHTML;
+                    paginationBlock.innerHTML = doc.querySelector('#pagination-block').innerHTML;
+                    productCount.innerHTML = doc.querySelector('#product-count').innerHTML;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching products:', error);
+            });
+        });
+    });
+</script>

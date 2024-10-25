@@ -1,19 +1,52 @@
 <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__price">
-                                                <ul>
-                                                    <li><a href="#">$0.00 - $50.00</a></li>
-                                                    <li><a href="#">$50.00 - $100.00</a></li>
-                                                    <li><a href="#">$100.00 - $150.00</a></li>
-                                                    <li><a href="#">$150.00 - $200.00</a></li>
-                                                    <li><a href="#">$200.00 - $250.00</a></li>
-                                                    <li><a href="#">250.00+</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="card-heading">
+        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+    </div>
+    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+            <div class="shop__sidebar__price">
+                <ul id="price-filter">
+                    <li><a href="#" data-min="0" data-max="500">UAH 0.00 - UAH 500.00</a></li>
+                    <li><a href="#" data-min="500" data-max="1000">UAH 500.00 - UAH 1000.00</a></li>
+                    <li><a href="#" data-min="1000" data-max="1500">UAH 1000.00 - UAH 1500.00</a></li>
+                    <li><a href="#" data-min="1500" data-max="2000">UAH 1500.00 - UAH 2000.00</a></li>
+                    <li><a href="#" data-min="2000" data-max="2500">UAH 2000.00 - UAH2500.00</a></li>
+                    <li><a href="#" data-min="2500" data-max="">UAH 2500.00+</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('#price-filter a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const minPrice = this.dataset.min
+            const maxPrice = this.dataset.max;
+
+            fetch(`/shop/?min=${minPrice}&max=${maxPrice}`, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                const productList = document.querySelector('#products-list');
+                const paginationBlock = document.querySelector('#pagination-block');
+                const productCount = document.querySelector('#product-count');
+
+                if (productList && paginationBlock) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    productList.innerHTML = doc.querySelector('#products-list').innerHTML;
+                    paginationBlock.innerHTML = doc.querySelector('#pagination-block').innerHTML;
+                    productCount.innerHTML = doc.querySelector('#product-count').innerHTML;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching products:', error);
+            });
+        });
+    });
+</script>

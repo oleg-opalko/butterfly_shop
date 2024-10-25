@@ -1,6 +1,10 @@
+import random
+
 from ckeditor.fields import RichTextField
 from colorfield.fields import ColorField
 from django.db import models
+from django.db.models.signals import pre_save
+
 
 # Create your models here.
 
@@ -104,9 +108,13 @@ class Product(models.Model):
     branding = models.ForeignKey(Branding, on_delete=models.CASCADE, related_name='products')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
     is_featured = models.BooleanField(default=False)
+    is_new = models.BooleanField(default=False)
+    note = RichTextField(blank=True, null=True)
     size = models.ManyToManyField(SizeCategory, related_name='products')
     colors = models.ManyToManyField(Color, related_name='products')
     tags = models.ManyToManyField(Tag, related_name='products')
+    quantity = models.PositiveIntegerField(default=0)
+    is_liked = models.BooleanField(default=False)
     description = RichTextField(blank=True, null=True)
     additional_information = RichTextField(blank=True, null=True)
 

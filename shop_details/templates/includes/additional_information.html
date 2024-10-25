@@ -1,0 +1,13 @@
+{% if product.additional_information %}
+    <div class="tab-pane" id="tabs-7" role="tabpanel">
+        <div class="product__details__tab__content">
+            {% if product.note %}
+                <p class="note">{{ product.note }}</p>
+            {% endif %}
+            <div class="product__details__tab__content__item">
+                <h5>Products Information</h5>
+                {{ product.additional_information|safe }}
+            </div>
+        </div>
+    </div>
+{% endif %}

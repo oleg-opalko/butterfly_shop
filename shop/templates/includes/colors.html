@@ -1,16 +1,51 @@
 <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__color">
-                                                {% for color in colors %}
-                                                    <label class="{{ color.hex_code }}" style="background: {{ color.hex_code }}" for="{{ color.hex_code }}">
-                                                        <input type="radio" id="{{ color.hex_code }}">
-                                                    </label>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="card-heading">
+        <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
+    </div>
+    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+            <div class="shop__sidebar__color">
+                {% for color in colors %}
+                    <label class="{{ color.hex_code }}" style="background: {{ color.hex_code }}" for="{{ color.hex_code }}">
+                        <input type="radio" class="color-input" data-hex="{{ color.hex_code }}" id="{{ color.hex_code }}">
+                    </label>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.color-input').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const colorHex = this.dataset.hex;
+
+            const encodedColorHex = encodeURIComponent(colorHex);
+            console.log(encodedColorHex);
+
+            fetch(`/shop/?color=${ encodedColorHex }`, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                const productList = document.querySelector('#products-list');
+                const paginationBlock = document.querySelector('#pagination-block');
+                const productCount = document.querySelector('#product-count');
+
+                if (productList && paginationBlock) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    productList.innerHTML = doc.querySelector('#products-list').innerHTML;
+                    paginationBlock.innerHTML = doc.querySelector('#pagination-block').innerHTML;
+                    productCount.innerHTML = doc.querySelector('#product-count').innerHTML;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching products:', error);
+            });
+        });
+    });
+</script>

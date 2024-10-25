@@ -3,11 +3,15 @@
     {% if products %}
         {% for product in products %}
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item {% if product.discounted_price %}sale{% endif %}">
-                    <div class="product__item__pic" style="background-image: url('{{ product.main_image.url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="product__item {% if product.discounted_price %}sale{% endif %}" onclick="location.href='{% url 'shop_details' product.slug %}'">
+                    <div class="product__item__pic" style="background-image: url('{{ product.main_image.url }}');
+                            background-size: cover; background-position: center; background-repeat: no-repeat;">
                         {% if product.discounted_price %}
                             <span class="label">Sale</span>
+                        {% elif product.is_new %}
+                            <span class="label">New</span>
                         {% endif %}
+                        <a href="{% url 'shop_details' product.slug %}" class="product-link"></a>
                     </div>
                     <div class="product__item__text">
                         <h6>{{ product.name }}</h6>
@@ -24,7 +28,7 @@
         {% endfor %}
     {% else %}
         <div class="col-lg-12">
-            <p>No products available in this category.</p>
+            <p>No products available</p>
         </div>
     {% endif %}
 </div>
