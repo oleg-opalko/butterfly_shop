@@ -24,24 +24,26 @@
                             {% if product.note %}
                             	<p>{{ product.note }}</p>
                             {% endif %}
+
                             {% include 'includes/product_details_option.html' %}
+
                             <div class="product__details__cart__option">
                                 <div class="quantity">
                                     <div class="pro-qty">
                                         <input type="text" value="1">
                                     </div>
                                 </div>
-                                <a href="#" class="primary-btn">add to cart</a>
+                                <a href="#" class="primary-btn">{{ static_text.add_to_cart }}</a>
                             </div>
                             <div class="product__details__btns__option">
-                                <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
-                                <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
+                                <a href="#"><i class="fa fa-heart"></i> {{ static_text.add_to_wishlist }}</a>
+                                <a href="#"><i class="fa fa-exchange"></i> {{ static_text.add_to_compare}}</a>
                             </div>
                             <div class="product__details__last__option">
                                 <ul>
-                                    <li><span>Brand:</span> {{ product.branding }}</li>
-                                    <li><span>Categories:</span> {{ product.category }}</li>
-                                    <li><span>Tag:</span>
+                                    <li><span>{{ static_text.brand_text }}</span> {{ product.branding }}</li>
+                                    <li><span>{{ static_text.category_text }}</span> {{ product.category }}</li>
+                                    <li><span>{{ static_text.tags_text }}</span>
                                         {% for tag in product.tags.all %}
                                     	    {{ tag }},
                                             {% if forloop.last %}
@@ -60,12 +62,13 @@
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#tabs-5"
-                                    role="tab">Description</a>
+                                    role="tab">{{ static_text.description_text }}</a>
                                 </li>
                                 {% if product.additional_information %}
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Additional
-                                        information</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">
+                                            {{ static_text.additional_info_text }}
+                                        </a>
                                     </li>
                                 {% endif %}
                             </ul>
@@ -76,7 +79,7 @@
                                             <p class="note">{{ product.note }}</p>
                                         {% endif %}
                                         <div class="product__details__tab__content__item">
-                                            <h5>Products Information</h5>
+                                            <h5>{{ static_text.product_info_text }}</h5>
                                             {{ product.description|safe }}
                                         </div>
                                     </div>

@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'ckeditor',
     'colorfield',
-    'shop_details.apps.ShopDetailsConfig'
+    'shop_details.apps.ShopDetailsConfig',
+    'shopping_cart.apps.ShoppingCartConfig',
+    'checkout.apps.CheckoutConfig'
 ]
 
 MIDDLEWARE = [
@@ -53,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'butterfly_shop.middleware.CartMiddleware'
 ]
 
 ROOT_URLCONF = 'butterfly_shop.urls'
@@ -69,6 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'butterfly_shop.context_processors.static_text',
             ],
         },
     },

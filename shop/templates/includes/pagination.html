@@ -10,7 +10,7 @@
                     {% elif num == 1 or num == products.paginator.num_pages %}
                         <a href="?page={{ num }}">{{ num }}</a>
                     {% elif num == products.number|add:'-3' or num == products.number|add:'3' %}
-                        <span>...</span>
+                        <span>{{ static_text.points }}</span>
                     {% endif %}
                 {% endfor %}
             </div>

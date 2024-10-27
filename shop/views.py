@@ -64,6 +64,7 @@ def shop(request):
             'products': products,
         })
 
+
     # If this general call, return all content
     context = {
         'categories': CATEGORIES,
@@ -73,4 +74,5 @@ def shop(request):
         'tags': TAGS,
         'products': products,
     }
+
     return render(request, 'shop.html', context)

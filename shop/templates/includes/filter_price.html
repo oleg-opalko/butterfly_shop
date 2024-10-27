@@ -1,17 +1,17 @@
 <div class="card">
     <div class="card-heading">
-        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+        <a data-toggle="collapse" data-target="#collapseThree">{{ static_text.filter_price }}</a>
     </div>
     <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
         <div class="card-body">
             <div class="shop__sidebar__price">
                 <ul id="price-filter">
-                    <li><a href="#" data-min="0" data-max="500">UAH 0.00 - UAH 500.00</a></li>
-                    <li><a href="#" data-min="500" data-max="1000">UAH 500.00 - UAH 1000.00</a></li>
-                    <li><a href="#" data-min="1000" data-max="1500">UAH 1000.00 - UAH 1500.00</a></li>
-                    <li><a href="#" data-min="1500" data-max="2000">UAH 1500.00 - UAH 2000.00</a></li>
-                    <li><a href="#" data-min="2000" data-max="2500">UAH 2000.00 - UAH2500.00</a></li>
-                    <li><a href="#" data-min="2500" data-max="">UAH 2500.00+</a></li>
+                    <li><a href="#" data-min="0" data-max="500">{{ static_text.price_filter_1 }}</a></li>
+                    <li><a href="#" data-min="500" data-max="1000">{{ static_text.price_filter_2 }}</a></li>
+                    <li><a href="#" data-min="1000" data-max="1500">{{ static_text.price_filter_3 }}</a></li>
+                    <li><a href="#" data-min="1500" data-max="2000">{{ static_text.price_filter_4 }}</a></li>
+                    <li><a href="#" data-min="2000" data-max="2500">{{ static_text.price_filter_5 }}</a></li>
+                    <li><a href="#" data-min="2500" data-max="">{{ static_text.price_filter_6|safe }}</a></li>
                 </ul>
             </div>
         </div>

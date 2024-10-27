@@ -5,7 +5,7 @@
                 <p class="note">{{ product.note }}</p>
             {% endif %}
             <div class="product__details__tab__content__item">
-                <h5>Products Information</h5>
+                <h5>{{ static_text.product_info_text }}</h5>
                 {{ product.additional_information|safe }}
             </div>
         </div>

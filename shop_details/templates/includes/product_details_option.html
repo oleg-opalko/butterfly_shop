@@ -1,6 +1,6 @@
 <div class="product__details__option">
     <div class="product__details__option__size">
-        <span>Size:</span>
+        <span>{{ static_words.size_text }}</span>
         {% for size in product.size.all %}
             <label for="{{ size.slug }}">{{ size.name }}
                 <input type="radio" id="{{ size.slug }}">
@@ -8,7 +8,7 @@
         {% endfor %}
     </div>
     <div class="product__details__option__color">
-        <span>Color:</span>
+        <span>{{ static_words.colors_text }}</span>
         {% for color in product.colors.all %}
             <label class="{{ color.hex_code }}" style="background: {{ color.hex_code }}" for="{{ color.hex_code }}">
                 <input type="radio" id="{{ color.hex_code }}">

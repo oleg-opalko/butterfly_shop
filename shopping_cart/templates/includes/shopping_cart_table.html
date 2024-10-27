@@ -1,0 +1,50 @@
+<div class="col-lg-8">
+    <div class="shopping__cart__table">
+        <table>
+            <thead>
+                <tr>
+                    <th>{{ static_text.product_text }}</th>
+                    <th>{{ static_text.quantity_text }}</th>
+                    <th>{{ static_text.total_text }}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product_id, product in cart.items %}
+                    <tr>
+                        <td class="product__cart__item">
+                            <div class="product__cart__item__pic">
+                                <img src="{{ product.image }}" style="width: 90px; height: 130px;" alt="">
+                            </div>
+                            <div class="product__cart__item__text">
+                                <h6>{{ product.name }}</h6>
+                                <h5>{{ product.price }}</h5>
+                            </div>
+                        </td>
+                        <td class="quantity__item">
+                            <div class="quantity">
+                                <div class="pro-qty-2">
+                                    <input type="text" class="quantity-input" data-product-id="{{ product_id }}" value="{{ product.quantity }}">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="cart__price">UAH {{ product.total_price }}</td>
+                        <td class="cart__close"><i class="fa fa-close"></i></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="continue__btn">
+                <a href="{% url 'shop' %}">{{ static_text.continue_shopping_text }}</a>
+            </div>
+        </div>
+{#        <div class="col-lg-6 col-md-6 col-sm-6">#}
+{#            <div class="continue__btn update__btn">#}
+{#                <a href="#"><i class="fa fa-spinner"></i> {{ static_text.update_cart_text }}</a>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+</div>

@@ -1,10 +1,10 @@
 <nav class="header__menu mobile-menu">
     <ul>
         <li class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}">
-            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'index' %}">{{ static_text.home_text }}</a>
         </li>
         <li class="{% if request.resolver_match.url_name == 'shop' %}active{% endif %}">
-            <a href="{% url 'shop' %}">Shop</a>
+            <a href="{% url 'shop' %}">{{ static_text.shop_text }}</a>
         </li>
 {#        <li class="{% if request.resolver_match.url_name in ['about_us', 'shop_details', 'shopping_cart', 'checkout'] %}active{% endif %}">#}
 {#            <a href="#">Pages</a>#}
@@ -16,7 +16,7 @@
 {#            </ul>#}
 {#        </li>#}
         <li class="{% if request.resolver_match.url_name == 'contacts' %}active{% endif %}">
-            <a href="#">Contacts</a>
+            <a href="#">{{ static_text.contacts_text }}</a>
         </li>
     </ul>
 </nav>

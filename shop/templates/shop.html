@@ -7,10 +7,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__text">
-                        <h4>Shop</h4>
+                        <h4>{{ static_text.shop_text }}</h4>
                         <div class="breadcrumb__links">
-                            <a href="{% url 'index' %}">Home</a>
-                            <span>Shop</span>
+                            <a href="{% url 'index' %}">{{ static_text.home_text }}</a>
+                            <span>{{ static_text.shop_text }}</span>
                         </div>
                     </div>
                 </div>
@@ -41,10 +41,44 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" id="btn_reset_filters" class="primary-btn" style="width: 100%; text-align: center;">
+                        {{ static_text.clear_filters }}
+                    </a>
                 </div>
                {% include 'includes/shop_product_option.html' %}
             </div>
         </div>
     </section>
     <!-- Shop Section End -->
+    <script>
+        document.querySelector('#btn_reset_filters').addEventListener('click', function(e) {
+            e.preventDefault();
+
+            fetch('{% url 'shop' %}', {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                const productList = document.querySelector('#products-list');
+                const paginationBlock = document.querySelector('#pagination-block');
+                const productCount = document.querySelector('#product-count');
+
+                if (productList) {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    productList.innerHTML = doc.querySelector('#products-list').innerHTML;
+                    paginationBlock.innerHTML = doc.querySelector('#pagination-block').innerHTML;
+                    productCount.innerHTML = doc.querySelector('#product-count').innerHTML;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching products:', error);
+            });
+        });
+    </script>
 {% endblock %}
+
+

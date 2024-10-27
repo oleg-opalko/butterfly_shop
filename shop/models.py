@@ -113,7 +113,6 @@ class Product(models.Model):
     size = models.ManyToManyField(SizeCategory, related_name='products')
     colors = models.ManyToManyField(Color, related_name='products')
     tags = models.ManyToManyField(Tag, related_name='products')
-    quantity = models.PositiveIntegerField(default=0)
     is_liked = models.BooleanField(default=False)
     description = RichTextField(blank=True, null=True)
     additional_information = RichTextField(blank=True, null=True)

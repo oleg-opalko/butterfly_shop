@@ -26,6 +26,7 @@ from butterfly_shop import settings
 from home.views import index
 from shop.views import shop
 from shop_details.views import shop_details
+from shopping_cart.views import cart, add_to_cart, update_cart_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -35,6 +36,9 @@ urlpatterns = [
     path('logout/', logout, name='logout'),
     path('shop/', shop, name='shop'),
     path('product/<slug:slug>/', shop_details, name='shop_details'),
+    path('cart/', cart, name='cart'),
+    path('add-to-cart/', add_to_cart, name='add_to_cart'),
+    path('update-cart-item/', update_cart_item, name='update_cart_item'),
 ]
 
 if settings.DEBUG:
