@@ -1,0 +1,19 @@
+<div class="product__details__option">
+    <div class="product__details__option__size">
+        <span>{{ static_words.size_text }}</span>
+        {% for size in product.size.all %}
+            <label for="{{ size.slug }}" class="{% if selected_size == size.slug %}active{% endif %}">
+                {{ size.name }}
+                <input class="size-product" type="radio" id="{{ size.slug }}" name="size" value="{{ size.slug }}" {% if selected_size == size.slug %}checked{% endif %}>
+            </label>
+        {% endfor %}
+    </div>
+    <div class="product__details__option__color">
+        <span>{{ static_words.colors_text }}</span>
+        {% for color in product.colors.all %}
+            <label class="{{ color.hex_code }}" style="background: {{ color.hex_code }}" for="{{ color.hex_code }}">
+                <input type="radio" id="{{ color.hex_code }}">
+            </label>
+        {% endfor %}
+    </div>
+</div>

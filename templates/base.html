@@ -8,7 +8,7 @@
     <meta name="keywords" content="Butterfly_Shop, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Butterfly Shop</title>
+    <title>{{ static_text.butterfly_shop }}</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -49,5 +49,40 @@
     <script src="{% static "/js/mixitup.min.js" %}"></script>
     <script src="{% static "/js/owl.carousel.min.js" %}"></script>
     <script src="{% static "/js/main.js" %}"></script>
+    <script>
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.innerText = message;
+            toast.style.cssText = `
+                background-color: #000;
+                color: #fff;
+                padding: 15px 25px;
+                margin-top: 10px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2); /* Легкий білий відтінок */
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+                transform: translateY(-20px);
+                font-family: 'Arial', sans-serif;
+            `;
+
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.opacity = '1';
+                toast.style.transform = 'translateY(0)';
+            }, 100);
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(-20px)';
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
+    </script>
 </body>
 </html>

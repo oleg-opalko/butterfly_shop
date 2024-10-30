@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    {% include 'includes/breadcrumb_checkout_nav.html' %}
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="checkout__form">
+                <form method="post" action="{% url 'order_create' %}">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h6 class="checkout__title">{{ static_text.billing_details_text }}</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>{{ form.first_name.label_tag }}<span>*</span></p>
+                                        {{ form.first_name }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>{{ form.last_name.label_tag }}<span>*</span></p>
+                                        {{ form.last_name }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>{{ form.country.label_tag }}<span>*</span></p>
+                                {{ form.country }}
+                            </div>
+                            <div class="checkout__input">
+                                <p>{{ form.address.label_tag }}<span>*</span></p>
+                                {{ form.address }}
+                            </div>
+                            <div class="checkout__input">
+                                <p>{{ form.city.label_tag }}<span>*</span></p>
+                                {{ form.city }}
+                            </div>
+                            <div class="checkout__input">
+                                <p>{{ form.state.label_tag }}<span>*</span></p>
+                                {{ form.state }}
+                            </div>
+                            <div class="checkout__input">
+                                <p>{{ form.zip_code.label_tag }}<span>*</span></p>
+                                {{ form.zip_code }}
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>{{ form.phone.label_tag }}<span>*</span></p>
+                                        {{ form.phone }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>{{ form.email.label_tag }}<span>*</span></p>
+                                        {{ form.email }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="acc">
+                                    {{ static_text.create_an_account }}
+                                    {{ form.create_account }}
+{#                                    <input type="checkbox" name="create_account">#}
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>{{ static_text.create_account_msg }}</p>
+                            </div>
+                            <div class="checkout__input" id="account-password" style="display: none;">
+                                <p>{{ static_text.account_password }}<span>*</span></p>
+                                {{ form.password }}
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="diff-acc">
+                                    {{ static_text.checkbox_notes_msg }}
+                                    <input type="checkbox" id="diff-acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input" id="order-notes" style="display: none;">
+                                <p>{{ form.order_notes.label_tag }}<span>*</span></p>
+                                {{ form.order_notes }}
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4 class="order__title">{{ static_text.your_order_text }}</h4>
+                                <div class="checkout__order__products">{{ static_text.product_text }} <span>{{ static_text.total_text }}</span></div>
+                                <ul class="checkout__total__products">
+                                   {% if cart.items %}
+                                        {% for _, product in cart.items %}
+                                            <li>{{ product.name }} <span>{{ product.total_price }}</span></li>
+                                            <li style="font-size: 12px">{{ static_text.size_text }} {{ product.size|upper }}</li>
+                                            <li style="font-size: 12px">{{ static_text.quantity_text }}: {{ product.quantity }}</li>
+                                        {% endfor %}
+                                    {% endif %}
+                                </ul>
+                                <ul class="checkout__total__all">
+                                    <li>{{ static_text.total_text }} <span>UAH {{ total_cart_price }}</span></li>
+                                </ul>
+                                <button type="submit" class="site-btn">PLACE ORDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('acc').addEventListener('change', function () {
+            var passwordField = document.getElementById('account-password');
+            if (this.checked) {
+                passwordField.style.display = 'block';
+            } else {
+                passwordField.style.display = 'none';
+                document.getElementById('account_password').value = '';
+            }
+        });
+
+        document.getElementById('diff-acc').addEventListener('change', function () {
+            var notesField = document.getElementById('order-notes');
+            if (this.checked) {
+                notesField.style.display = 'block';
+            } else {
+                notesField.style.display = 'none';
+                document.getElementById('order-notes').value = '';
+            }
+        });
+    </script>
+    <!-- Checkout Section End -->
+{% endblock %}

@@ -1,0 +1,32 @@
+<div class="col-lg-9">
+    <div class="shop__product__option">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="shop__product__option__left">
+                    <p id="product-count">
+                        {{ static_text.showing }} {{ products.start_index }}–{{ products.end_index }} {{ static_text.of }} {{ products.paginator.count }} {{ static_text.results }}
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="shop__product__option__right">
+                    <p>{{ static_text.sort_by_price }}</p>
+                    <select>
+                        <option value="">{{ static_text.low_to_high }}</option>
+                        <option value="">{{ static_text.filter_price_option_right_1 }}</option>
+                        <option value="">{{ static_text.filter_price_option_right_2 }}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="products-list">
+        {% include 'includes/product_list.html' %}
+    </div>
+
+    <div id="pagination-block">
+        {% include 'includes/pagination.html' %}
+    </div>
+</div>

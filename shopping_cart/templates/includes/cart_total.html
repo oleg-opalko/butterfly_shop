@@ -1,0 +1,7 @@
+<div class="cart__total">
+    <h6>{{ static_text.cart_total_text }}</h6>
+    <ul>
+        <li>{{ static_text.total_text }} <span class="cart_total_price_amount">UAH {{ request.cart_total_price }}</span></li>
+    </ul>
+    <a href="{% url 'checkout' %}" class="primary-btn">{{ static_text.proceed_to_checkout_text }}</a>
+</div>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include 'includes/breadcrumb_nav.html' %}
+    <section class="shopping-cart spad">
+        <div class="container">
+            {% if cart.items %}
+                <div class="row">
+                {% include 'includes/shopping_cart_table.html' %}
+                {% include 'includes/cart_total.html' %}
+            </div>
+            {% else %}
+                <div class="col-lg-12">
+                    <p>{{ static_text.no_product_available }}</p>
+                </div>
+            {% endif %}
+
+        </div>
+    </section>
+{% endblock %}
