@@ -94,7 +94,7 @@ if os.environ.get('DB_ENV') == 'dev':
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 elif os.environ.get('DB_ENV') == 'prod':
-    DATABASES['production'] = {
+    DATABASES['default'] = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
