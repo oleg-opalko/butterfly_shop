@@ -12,10 +12,23 @@ def shop_details(request, slug):
 
     related_products = Product.objects.filter(category=product.category).exclude(id=product.id)[:4]
 
+    selected_size = None
+    cart = request.session.get('cart', {})
+    quantity = 0
+
+    for product_key, item in cart.items():
+        product_id, size = product_key.split('_')
+        if str(product.id) == product_id:
+            selected_size = size
+            quantity = item['quantity']
+            break
+
     context = {
         'product': product,
         'images': images,
         'related_products': related_products,
+        'selected_size': selected_size,
+        'quantity': quantity,
     }
 
     return render(request, 'shop_details.html', context)

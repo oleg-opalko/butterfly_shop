@@ -2,8 +2,9 @@
     <div class="product__details__option__size">
         <span>{{ static_words.size_text }}</span>
         {% for size in product.size.all %}
-            <label for="{{ size.slug }}">{{ size.name }}
-                <input type="radio" id="{{ size.slug }}">
+            <label for="{{ size.slug }}" class="{% if selected_size == size.slug %}active{% endif %}">
+                {{ size.name }}
+                <input class="size-product" type="radio" id="{{ size.slug }}" name="size" value="{{ size.slug }}" {% if selected_size == size.slug %}checked{% endif %}>
             </label>
         {% endfor %}
     </div>

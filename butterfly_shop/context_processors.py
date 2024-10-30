@@ -55,6 +55,22 @@ def static_text(request):
         'continue_shopping_text':'Continue Shopping',
         'update_cart_text':'Update Cart',
         'cart_total_text':'Cart total',
+        'billing_details_text':'Billing Details',
+        'create_an_account':'Create an Account?',
+        'create_account_msg': 'Create an account by entering the information below. If you are a returning customer '
+                              'please login at the top of the page',
+        'account_password': 'Account Password',
+        'checkbox_notes_msg':'Note about your order, e.g, special noe for delivery',
+        'your_order_text':'Your order',
+        'place_order': 'PLACE ORDER',
+        'return_to_shop': 'Return to Shop',
+        'thx_order_text':'Thank You for Your Order!',
+        'confirm_manager': 'Our manager will contact you soon to confirm the details of your order.',
+        'information': 'Information',
+        'contact_us': 'Contact Us',
+        'collection': 'Collection',
+        'new_arrivals':'New Arrivals',
+        'hot_sales': 'Hot Sales'
     }
 
     return {

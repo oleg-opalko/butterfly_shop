@@ -3,27 +3,29 @@
     {% if products %}
         {% for product in products %}
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item {% if product.discounted_price %}sale{% endif %}" onclick="location.href='{% url 'shop_details' product.slug %}'">
+                <div class="product__item {% if product.discounted_price %}sale{% endif %}" >
                     <div class="product__item__pic" style="background-image: url('{{ product.main_image.url }}');
-                            background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            background-size: cover; background-position: center; background-repeat: no-repeat;"
+                            onclick="location.href='{% url 'shop_details' product.slug %}'">
                         {% if product.discounted_price %}
                             <span class="label">{{ static_text.sale_text }}</span>
                         {% elif product.is_new %}
                             <span class="label">{{ static_text.new_text }}</span>
                         {% endif %}
-                        <a href="{% url 'shop_details' product.slug %}" class="product-link"></a>
                     </div>
                     <div class="product__item__text">
-                        <h6>{{ product.name }}</h6>
-                        {% if product.discounted_price %}
-                            <h5 style="text-decoration: line-through;">{{ product.currency }} {{ product.price }}</h5>
-                            <h5>{{ product.currency }} {{ product.discounted_price }}</h5>
-                        {% else %}
-                            <h5>{{ product.currency }} {{ product.price }}</h5>
-                        {% endif %}
+                        <div onclick="location.href='{% url 'shop_details' product.slug %}'">
+                            <h6 style="opacity: 100%">{{ product.name }}</h6>
+                            {% if product.discounted_price %}
+                                <h5 style="text-decoration: line-through;">{{ product.currency }} {{ product.price }}</h5>
+                                <h5>{{ product.currency }} {{ product.discounted_price }}</h5>
+                            {% else %}
+                                <h5>{{ product.currency }} {{ product.price }}</h5>
+                            {% endif %}
+                        </div>
+{#                        <a href="#" class="add-cart" data-product-id="{{ product.id }}">{{ static_text.add_to_cart_with_plus }}</a>#}
                     </div>
                 </div>
-                <a href="#" class="add-cart" data-product-id="{{ product.id }}">{{ static_text.add_to_cart_with_plus }}</a>
             </div>
         {% endfor %}
     {% else %}
@@ -32,42 +34,4 @@
         </div>
     {% endif %}
 </div>
-<script>
-    document.querySelectorAll('.add-cart').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const productId = this.getAttribute('data-product-id');
-            const quantity = 1;
-
-            fetch(`{% url 'add_to_cart' %}?productId=${productId}&quantity=${ quantity }`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'X-CSRFToken':  '{{ csrf_token }}'
-                }
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log(data.message);
-                const cartQuantity = document.querySelector('.cart-quantity');
-                const cartPrice = document.querySelector('.price');
-
-                if (cartQuantity) {
-                    cartQuantity.textContent = data.total_quantity;
-                }
-                if (cartPrice) {
-                    cartPrice.textContent = data.total_price;
-                }
-            })
-            .catch(error => console.error('Error:', error));
-        });
-    });
-</script>
 

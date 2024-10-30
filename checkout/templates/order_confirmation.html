@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main id="main" style="text-align: center; margin: 50px 0;">
+        <h1>{{ static_text.thx_order_text }}</h1>
+        <p>{{ static_text.confirm_manager }}</p>
+        <a href="{% url 'shop' %}" class="primary-btn" style="width: 50%; text-align: center; display: inline-block;">{{ static_text.return_to_shop }}</a>
+    </main>
+{% endblock %}

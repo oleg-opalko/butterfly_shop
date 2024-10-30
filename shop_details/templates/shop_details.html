@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-    <!-- Shop Details Section Begin -->
     <section class="shop-details">
         <div class="product__details__pic">
             <div class="container">
@@ -30,14 +29,10 @@
                             <div class="product__details__cart__option">
                                 <div class="quantity">
                                     <div class="pro-qty">
-                                        <input type="text" value="1">
+                                        <input type="text" value="{{ quantity }}">
                                     </div>
                                 </div>
-                                <a href="#" class="primary-btn">{{ static_text.add_to_cart }}</a>
-                            </div>
-                            <div class="product__details__btns__option">
-                                <a href="#"><i class="fa fa-heart"></i> {{ static_text.add_to_wishlist }}</a>
-                                <a href="#"><i class="fa fa-exchange"></i> {{ static_text.add_to_compare}}</a>
+                                <a href="#" class="primary-btn add-cart" data-product-id="{{ product.id }}">{{ static_text.add_to_cart }}</a>
                             </div>
                             <div class="product__details__last__option">
                                 <ul>
@@ -92,9 +87,64 @@
             </div>
         </div>
     </section>
-    <!-- Shop Details Section End -->
-
-    <!-- Related Section Begin -->
     {% include 'includes/related_products.html' %}
-    <!-- Related Section End -->
+
+    <script>
+        document.querySelectorAll('.add-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const productId = this.getAttribute('data-product-id');
+                const quantityInput = document.querySelector('.pro-qty input');
+                const quantity = quantityInput ? quantityInput.value : 1;
+
+                const activeSizeLabel = document.querySelector('.product__details__option__size label.active input.size-product');
+                let size = null;
+
+                if (activeSizeLabel) {
+                    size = activeSizeLabel.getAttribute('id');
+                }
+
+                let url = `{% url 'add_to_cart' %}?productId=${productId}&quantity=${quantity}`;
+
+                if (size) {
+                    url += `&size=${size}`;
+                }
+
+                fetch(url , {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'X-CSRFToken':  '{{ csrf_token }}'
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data.message);
+                    const cartQuantity = document.querySelector('.cart-quantity');
+                    const cartPrice = document.querySelector('.price');
+
+                    if (cartQuantity) {
+                        cartQuantity.textContent = data.total_quantity;
+                    }
+                    if (cartPrice) {
+                        cartPrice.textContent = data.total_price;
+                    }
+
+                    showToast(data.message);
+                })
+                .catch(error =>{
+                    showToast(error);
+                    console.error('Error:', error)
+                });
+            });
+        });
+
+    </script>
 {% endblock %}

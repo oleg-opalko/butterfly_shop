@@ -50,41 +50,39 @@
     <script src="{% static "/js/owl.carousel.min.js" %}"></script>
     <script src="{% static "/js/main.js" %}"></script>
     <script>
-        document.querySelectorAll('.qtybtn').forEach(button => {
-            button.addEventListener('click', function () {
-                const inputElement = this.closest('tr').querySelector('.quantity-input');
-                const productId = inputElement.getAttribute('data-product-id');
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.innerText = message;
+            toast.style.cssText = `
+                background-color: #000;
+                color: #fff;
+                padding: 15px 25px;
+                margin-top: 10px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2); /* Легкий білий відтінок */
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+                transform: translateY(-20px);
+                font-family: 'Arial', sans-serif;
+            `;
 
-                setTimeout(() => {
-                    const newQuantity = inputElement.value;
+            document.body.appendChild(toast);
 
-                    fetch(`{% url 'update_cart_item' %}`, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRFToken': '{{ csrf_token }}'
-                        },
-                        body: JSON.stringify({
-                            'product_id': productId,
-                            'quantity': newQuantity
-                        })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            const totalRow = this.closest('tr').querySelector('.cart__price');
-                            totalRow.textContent = `UAH ${data.total_price.toFixed(1)}`;
+            setTimeout(() => {
+                toast.style.opacity = '1';
+                toast.style.transform = 'translateY(0)';
+            }, 100);
 
-                            document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
-                            document.querySelector('.cart-quantity').textContent = data.total_quantity;
-                            document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
-                        } else {
-                            alert('Error updating cart');
-                        }
-                    });
-                }, 200);
-            });
-        });
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(-20px)';
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
     </script>
 </body>
 </html>

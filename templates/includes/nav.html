@@ -16,7 +16,7 @@
 {#            </ul>#}
 {#        </li>#}
         <li class="{% if request.resolver_match.url_name == 'contacts' %}active{% endif %}">
-            <a href="#">{{ static_text.contacts_text }}</a>
+            <a href="{% url 'contacts' %}">{{ static_text.contacts_text }}</a>
         </li>
     </ul>
 </nav>

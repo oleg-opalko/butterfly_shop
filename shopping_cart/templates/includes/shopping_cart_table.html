@@ -1,50 +1,113 @@
 <div class="col-lg-8">
     <div class="shopping__cart__table">
-        <table>
-            <thead>
+    <table>
+        <thead>
+            <tr>
+                <th>{{ static_text.product_text }}</th>
+                <th>{{ static_text.quantity_text }}</th>
+                <th>{{ static_text.total_text }}</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product_id, product in cart.items %}
                 <tr>
-                    <th>{{ static_text.product_text }}</th>
-                    <th>{{ static_text.quantity_text }}</th>
-                    <th>{{ static_text.total_text }}</th>
-                    <th></th>
+                    <td class="product__cart__item">
+                        <div class="product__cart__item__pic">
+                            <img src="{{ product.image }}" style="width: 90px; height: 130px;" alt="">
+                        </div>
+                        <div class="product__cart__item__text">
+                            <h6>{{ product.name }}</h6>
+                            <h5>{{ product.price }}</h5>
+                            <span>{{ static_text.size_text }} {{ product.size|upper }}</span>
+                        </div>
+                    </td>
+                    <td class="quantity__item">
+                        <div class="quantity">
+                            <div class="pro-qty-2">
+                                <input type="text" class="quantity-input" data-product-id="{{ product_id }}" value="{{ product.quantity }}">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart__price">UAH {{ product.total_price }}</td>
+                    <td class="cart__close"><i class="fa fa-close"></i></td>
                 </tr>
-            </thead>
-            <tbody>
-                {% for product_id, product in cart.items %}
-                    <tr>
-                        <td class="product__cart__item">
-                            <div class="product__cart__item__pic">
-                                <img src="{{ product.image }}" style="width: 90px; height: 130px;" alt="">
-                            </div>
-                            <div class="product__cart__item__text">
-                                <h6>{{ product.name }}</h6>
-                                <h5>{{ product.price }}</h5>
-                            </div>
-                        </td>
-                        <td class="quantity__item">
-                            <div class="quantity">
-                                <div class="pro-qty-2">
-                                    <input type="text" class="quantity-input" data-product-id="{{ product_id }}" value="{{ product.quantity }}">
-                                </div>
-                            </div>
-                        </td>
-                        <td class="cart__price">UAH {{ product.total_price }}</td>
-                        <td class="cart__close"><i class="fa fa-close"></i></td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+            {% endfor %}
+        </tbody>
+    </table>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="continue__btn">
-                <a href="{% url 'shop' %}">{{ static_text.continue_shopping_text }}</a>
-            </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="continue__btn">
+            <a href="{% url 'shop' %}">{{ static_text.continue_shopping_text }}</a>
         </div>
-{#        <div class="col-lg-6 col-md-6 col-sm-6">#}
-{#            <div class="continue__btn update__btn">#}
-{#                <a href="#"><i class="fa fa-spinner"></i> {{ static_text.update_cart_text }}</a>#}
-{#            </div>#}
-{#        </div>#}
     </div>
 </div>
+</div>
+
+<script>
+    document.querySelectorAll('.qtybtn').forEach(button => {
+        button.addEventListener('click', function () {
+            const inputElement = this.closest('tr')?.querySelector('.quantity-input');
+            const productId = inputElement.getAttribute('data-product-id');
+
+            setTimeout(() => {
+                const newQuantity = inputElement?.value;
+
+                fetch(`{% url 'update_cart_item' %}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}'
+                    },
+                    body: JSON.stringify({
+                        'product_id': productId,
+                        'quantity': newQuantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const totalRow = this.closest('tr').querySelector('.cart__price');
+                        totalRow.textContent = `UAH ${data.total_price.toFixed(1)}`;
+
+                        document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                        document.querySelector('.cart-quantity').textContent = data.total_quantity;
+                        document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                    } else {
+                        alert('Error updating cart');
+                    }
+                });
+            }, 200);
+        });
+    });
+    document.querySelectorAll('.cart__close').forEach(button => {
+        button.addEventListener('click', function () {
+            const rowElement = this.closest('tr');
+            const productId = rowElement.querySelector('.quantity-input').getAttribute('data-product-id');
+
+            fetch(`{% url 'remove_cart_item' %}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({
+                    'product_id': productId
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    rowElement.remove();
+
+                    document.querySelector('.cart-quantity').textContent = data.total_quantity;
+                    document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                    document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                } else {
+                    alert('Error removing product from cart');
+                }
+            });
+        });
+    });
+</script>

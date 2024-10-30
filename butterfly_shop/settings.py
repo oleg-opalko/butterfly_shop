@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'colorfield',
     'shop_details.apps.ShopDetailsConfig',
     'shopping_cart.apps.ShoppingCartConfig',
-    'checkout.apps.CheckoutConfig'
+    'checkout.apps.CheckoutConfig',
+    'contacts.apps.ContactsConfig'
 ]
 
 MIDDLEWARE = [

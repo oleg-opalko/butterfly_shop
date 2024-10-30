@@ -20,13 +20,16 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
+import contacts
 from account.forms import UserRegisterForm
 from account.views import UserLoginView, UserRegisterView, logout
 from butterfly_shop import settings
+from checkout.views import checkout, order_create, order_confirmation
+from contacts.views import contact
 from home.views import index
 from shop.views import shop
 from shop_details.views import shop_details
-from shopping_cart.views import cart, add_to_cart, update_cart_item
+from shopping_cart.views import cart, add_to_cart, update_cart_item, remove_cart_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -39,6 +42,11 @@ urlpatterns = [
     path('cart/', cart, name='cart'),
     path('add-to-cart/', add_to_cart, name='add_to_cart'),
     path('update-cart-item/', update_cart_item, name='update_cart_item'),
+    path('remove-cart-item/', remove_cart_item, name='remove_cart_item'),
+    path('checkout/', checkout, name='checkout'),
+    path('order-create/', order_create, name='order_create'),
+    path('order-confirmation', order_confirmation, name='order_confirmation'),
+    path('contacts/', contact, name='contacts'),
 ]
 
 if settings.DEBUG:
