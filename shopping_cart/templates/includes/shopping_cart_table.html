@@ -37,77 +37,92 @@
     </table>
     </div>
     <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="continue__btn">
-            <a href="{% url 'shop' %}">{{ static_text.continue_shopping_text }}</a>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="continue__btn">
+                <a href="{% url 'shop' %}">{{ static_text.continue_shopping_text }}</a>
+            </div>
         </div>
     </div>
-</div>
-</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.shopping__cart__table').addEventListener('click', function (event) {
+                const button = event.target.closest('.qtybtn');
+                if (button) {
+                    const inputElement = button.closest('.pro-qty-2').querySelector('.quantity-input');
+                    inputElement.dispatchEvent(new Event('change'));
+                }
+            });
+        });
 
-<script>
-    document.querySelectorAll('.qtybtn').forEach(button => {
-        button.addEventListener('click', function () {
-            const inputElement = this.closest('tr')?.querySelector('.quantity-input');
-            const productId = inputElement.getAttribute('data-product-id');
+        document.querySelectorAll('.quantity-input').forEach(inputElement => {
+            inputElement.addEventListener('change', function () {
+                const productId = this.getAttribute('data-product-id');
+                const newQuantity = this.value;
 
-            setTimeout(() => {
-                const newQuantity = inputElement?.value;
+                console.log(`Product ID: ${productId}, New Quantity: ${newQuantity}`);
 
-                fetch(`{% url 'update_cart_item' %}`, {
+                if (newQuantity && newQuantity > 0) {
+                    fetch(`{% url 'update_cart_item' %}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        body: JSON.stringify({
+                            'product_id': productId,
+                            'quantity': newQuantity
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            const totalRow = this.closest('tr').querySelector('.cart__price');
+                            totalRow.textContent = `UAH ${data.total_price.toFixed(1)}`;
+
+                            document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                            document.querySelector('.cart-quantity').textContent = data.total_quantity;
+                            document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                        } else {
+                            alert('Error updating cart');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error during fetch:', error);
+                    });
+                } else {
+                    alert('Invalid quantity');
+                }
+            });
+        });
+
+        document.querySelectorAll('.cart__close').forEach(button => {
+            button.addEventListener('click', function () {
+                const rowElement = this.closest('tr');
+                const productId = rowElement.querySelector('.quantity-input').getAttribute('data-product-id');
+
+                fetch(`{% url 'remove_cart_item' %}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'X-CSRFToken': '{{ csrf_token }}'
                     },
                     body: JSON.stringify({
-                        'product_id': productId,
-                        'quantity': newQuantity
+                        'product_id': productId
                     })
                 })
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        const totalRow = this.closest('tr').querySelector('.cart__price');
-                        totalRow.textContent = `UAH ${data.total_price.toFixed(1)}`;
+                        rowElement.remove();
 
-                        document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
                         document.querySelector('.cart-quantity').textContent = data.total_quantity;
                         document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
+                        document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
                     } else {
-                        alert('Error updating cart');
+                        alert('Error removing product from cart');
                     }
                 });
-            }, 200);
-        });
-    });
-    document.querySelectorAll('.cart__close').forEach(button => {
-        button.addEventListener('click', function () {
-            const rowElement = this.closest('tr');
-            const productId = rowElement.querySelector('.quantity-input').getAttribute('data-product-id');
-
-            fetch(`{% url 'remove_cart_item' %}`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': '{{ csrf_token }}'
-                },
-                body: JSON.stringify({
-                    'product_id': productId
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    rowElement.remove();
-
-                    document.querySelector('.cart-quantity').textContent = data.total_quantity;
-                    document.querySelector('.price').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
-                    document.querySelector('.cart_total_price_amount').textContent = `UAH ${data.total_cart_price.toFixed(1)}`;
-                } else {
-                    alert('Error removing product from cart');
-                }
             });
         });
-    });
-</script>
+    </script>
+</div>
