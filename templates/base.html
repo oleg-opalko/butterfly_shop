@@ -27,6 +27,25 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+
+    <div class="offcanvas-menu-overlay"></div>
+        <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">{{ static_text.sign_out }}</a>
+                {% else %}
+                    <a href="{% url 'login' %}">{{ static_text.sign_in }}</a>
+                    <a href="{% url 'register' %}">{{ static_text.register }}</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="{% url 'cart' %}"><img src='{% static 'img/icon/cart.png'  %}' alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
     
     {% include 'includes/header.html' %}
 
@@ -49,7 +68,7 @@
     <script src="{% static "/js/mixitup.min.js" %}"></script>
     <script src="{% static "/js/owl.carousel.min.js" %}"></script>
     <script src="{% static "/js/main.js" %}"></script>
-    
+
     <script>
         function showToast(message) {
             const toast = document.createElement('div');
