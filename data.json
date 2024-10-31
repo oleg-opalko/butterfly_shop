@@ -1,0 +1,3770 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-10-20T11:15:09.695Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Men",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-10-20T11:15:18.754Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Women",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-10-20T11:15:40.078Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-10-20T11:15:47.629Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Clothing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-10-20T11:15:54.549Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "Shoes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-10-20T11:16:01.702Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "Accessories",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-10-20T11:16:11.375Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "Kids",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-10-20T11:16:24.647Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Louis Vuitton",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-10-20T11:16:35.271Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Chanel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-10-20T11:16:37.490Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Hermes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-10-20T11:16:43.725Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Gucci",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-10-20T11:28:11.323Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Blue",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-10-20T11:28:20.593Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Red",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-10-20T11:28:30.845Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-10-20T11:30:31.568Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Green",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-10-20T11:30:41.451Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "XXL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-10-20T11:30:44.435Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "XL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-10-20T11:30:47.382Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "L",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-10-20T11:30:52.465Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "M",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-10-20T11:30:55.644Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "S",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-10-20T11:30:57.859Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "XS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-10-20T11:31:17.176Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Clothing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-10-20T11:31:28.666Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Shoes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-10-20T11:31:48.730Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Skin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-10-20T11:31:55.844Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Body",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-10-20T11:51:14.536Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "Clothes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-10-20T11:52:35.691Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Hooded thermal anorak",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-10-20T13:01:46.575Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Clothing",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-10-20T14:24:04.090Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Hooded thermal anorak",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Currency\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-10-20T14:47:36.769Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Hooded thermal anorak",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Main image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-10-20T21:02:09.747Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Ukranian brand",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-10-20T21:02:33.509Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "T-shirt",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-10-20T21:02:59.099Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "T-shirt",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-10-20T21:04:03.647Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "T-shirt brown",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-10-20T21:04:58.726Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "Pants",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-10-20T21:05:16.166Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Pants",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-10-20T21:06:54.969Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Sports pants Staff jot black fleece",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-10-20T21:08:44.932Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "Skinny",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-10-20T21:09:19.625Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "#7D50FF",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-10-20T21:09:51.993Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Skinny",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-10-20T21:10:57.317Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Skinny light gray oversize fleece",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-10-20T21:23:25.762Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Skinny light gray oversize fleece",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Currency\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-10-20T21:23:37.032Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Hooded thermal anorak",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Currency\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-10-20T21:41:35.375Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Skinny blue basic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-10-20T21:43:22.735Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "Pink",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-10-20T21:44:02.154Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Skinny basic pink oversize",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-10-20T21:45:14.007Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "Jeans",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-10-20T21:46:17.051Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "dark gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-10-20T21:46:28.260Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Jeans",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-10-20T21:47:09.702Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Jeans dark gray regular",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-10-20T21:48:52.564Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "13",
+        "object_repr": "Winter jacket",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-10-20T21:49:44.822Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "Winter jacket",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-10-20T21:51:00.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Staff K black basic winter jacket",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-10-20T21:52:13.668Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "14",
+        "object_repr": "Sneakers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-10-20T21:52:35.922Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "Sneakers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-10-20T21:53:14.940Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "8",
+        "object_repr": "light gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-10-20T21:54:27.495Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Sneakers black & light gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-10-20T21:56:13.385Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "38",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-10-20T21:56:18.755Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "39",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-10-20T21:56:22.626Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "40",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-10-20T21:56:26.440Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "41",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-10-20T21:56:29.810Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "42",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-10-20T21:57:16.020Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Sneakers navy reflective",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-10-20T21:59:45.355Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "Black winter sneakers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2024-10-20T22:01:14.138Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "9",
+        "object_repr": "Gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2024-10-20T22:02:26.963Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Pants cargo nix dark gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2024-10-20T22:03:58.670Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "10",
+        "object_repr": "light beige",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2024-10-20T22:05:16.468Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Pants cargo al light beige",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2024-10-20T23:25:54.839Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Black basic winter jacket",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2024-10-20T23:26:17.078Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Sports pants jot black fleece",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2024-10-23T11:35:25.293Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Pants cargo nix dark gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2024-10-23T11:35:38.217Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Pants cargo nix dark gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is new\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2024-10-29T15:46:09.792Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "Contact us: Ukraine вул.Львівська 0682859256",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2024-10-29T15:46:36.489Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "Contact us: Ukraine м.Львів 0994906647",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2024-10-29T20:54:42.178Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "New Collections",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2024-10-29T20:54:55.470Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "New Collection 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add tag",
+        "content_type": 7,
+        "codename": "add_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change tag",
+        "content_type": 7,
+        "codename": "change_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete tag",
+        "content_type": 7,
+        "codename": "delete_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view tag",
+        "content_type": 7,
+        "codename": "view_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 8,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 8,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 8,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 8,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add branding",
+        "content_type": 9,
+        "codename": "add_branding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change branding",
+        "content_type": 9,
+        "codename": "change_branding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete branding",
+        "content_type": 9,
+        "codename": "delete_branding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view branding",
+        "content_type": 9,
+        "codename": "view_branding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 10,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 10,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 10,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 10,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add color",
+        "content_type": 11,
+        "codename": "add_color"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change color",
+        "content_type": 11,
+        "codename": "change_color"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete color",
+        "content_type": 11,
+        "codename": "delete_color"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view color",
+        "content_type": 11,
+        "codename": "view_color"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add size category",
+        "content_type": 12,
+        "codename": "add_sizecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change size category",
+        "content_type": 12,
+        "codename": "change_sizecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete size category",
+        "content_type": 12,
+        "codename": "delete_sizecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view size category",
+        "content_type": 12,
+        "codename": "view_sizecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add cart item",
+        "content_type": 13,
+        "codename": "add_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change cart item",
+        "content_type": 13,
+        "codename": "change_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete cart item",
+        "content_type": 13,
+        "codename": "delete_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view cart item",
+        "content_type": 13,
+        "codename": "view_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add cart",
+        "content_type": 14,
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change cart",
+        "content_type": 14,
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": 14,
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view cart",
+        "content_type": 14,
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 15,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 15,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 15,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 15,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add order item",
+        "content_type": 16,
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change order item",
+        "content_type": 16,
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete order item",
+        "content_type": 16,
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view order item",
+        "content_type": 16,
+        "codename": "view_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 17,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 17,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 17,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 17,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add contact",
+        "content_type": 18,
+        "codename": "add_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change contact",
+        "content_type": 18,
+        "codename": "change_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete contact",
+        "content_type": 18,
+        "codename": "delete_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view contact",
+        "content_type": 18,
+        "codename": "view_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add contact us",
+        "content_type": 19,
+        "codename": "add_contactus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change contact us",
+        "content_type": 19,
+        "codename": "change_contactus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete contact us",
+        "content_type": 19,
+        "codename": "delete_contactus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view contact us",
+        "content_type": 19,
+        "codename": "view_contactus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add banner collection",
+        "content_type": 20,
+        "codename": "add_bannercollection"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change banner collection",
+        "content_type": 20,
+        "codename": "change_bannercollection"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete banner collection",
+        "content_type": 20,
+        "codename": "delete_bannercollection"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view banner collection",
+        "content_type": 20,
+        "codename": "view_bannercollection"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add clothing banner",
+        "content_type": 21,
+        "codename": "add_clothingbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change clothing banner",
+        "content_type": 21,
+        "codename": "change_clothingbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete clothing banner",
+        "content_type": 21,
+        "codename": "delete_clothingbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view clothing banner",
+        "content_type": 21,
+        "codename": "view_clothingbanner"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$wHYg70X8IBTX7H338DsbrG$SdLARMM0stPZy/rmwrEoBSIN4LL45i0uv9/lSlZYekE=",
+        "last_login": "2024-10-31T13:56:50.053Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-20T10:21:51.030Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$AOyGqqzTWPCej72ga0xria$cI5BRiPsbwHF3rDShbwFFdZdUktnJUgayhq55lRJV2Y=",
+        "last_login": "2024-10-20T10:54:30.923Z",
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "email": "user1@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-20T10:53:50.541Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$ophDOqY3tQis2fjI7p0K8S$62le2KtPSUZsCFXaKsUxCaspl6fMMb/6NnlE5/qqqwk=",
+        "last_login": "2024-10-30T00:02:58.092Z",
+        "is_superuser": false,
+        "username": "олег.опалько",
+        "first_name": "",
+        "last_name": "",
+        "email": "oopalko96@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-30T00:02:55.729Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$n5Y50tDDTReiwlbTPrN2ju$pQh7LNqSN1zqBFNZuI1rnbq9I49KlvdQ2i+KVujCenI=",
+        "last_login": "2024-10-30T00:31:39.235Z",
+        "is_superuser": false,
+        "username": "test@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-30T00:31:06.726Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "shop",
+        "model": "tag"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "shop",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "shop",
+        "model": "branding"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "shop",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "shop",
+        "model": "color"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "shop",
+        "model": "sizecategory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "shopping_cart",
+        "model": "cartitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "shopping_cart",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "shopping_cart",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "checkout",
+        "model": "orderitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "checkout",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "contacts",
+        "model": "contact"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "contacts",
+        "model": "contactus"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "home",
+        "model": "bannercollection"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "home",
+        "model": "clothingbanner"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8nxn06ynoizg60y69sxq1qhqfbwhhiez",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmmI5bWpXvO0Mx0poIaSCisjHcXEha6_e-9_zaJ1qVPa9U5DWKuxpnT78aUnzruQB403iebp3GZB7a7Yg9abTeJvm6H-3fQU-23OqvXcBGI0DYIVNrgQSgHRi7QnEEjgGaKiI1j7zig51iKkGweEpvPF-UeOEk:1t42WU:uSW6OUXKqQ0-kHAMFU1Fnzzs7mCopH9UxcPxwPWZX1A",
+        "expire_date": "2024-11-07T18:25:26.076Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kv26l34rpz4nkyjpubqntqo16zudonii",
+    "fields": {
+        "session_data": ".eJxVjDEOgzAMRe_iuYpMSkPC2L1nQHbsNLQVSAQmxN0LEgvrf-_9FSJNM7TrdoOOljl3S9Gp6wVaqOCyMcWvDgeQDw3v0cRxmKeezaGYkxbzGkV_z9O9HGQqea-jOvUPwYBNbZFS4x0KRc-WE9Z31ICokYK1dcWuYm8dh5SEZPcsMWx_LHE7lQ:1t67jf:XjyM7nfcC-VTw1OYu5SQ0U9PtuQWKY-GEic6hib-ku8",
+        "expire_date": "2024-11-13T12:23:39.400Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mwu2gmcta974cngqvbvnhe5u89s0op3h",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmmI5bWpXvO0Mx0poIaSCisjHcXEha6_e-9_zaJ1qVPa9U5DWKuxpnT78aUnzruQB403iebp3GZB7a7Yg9abTeJvm6H-3fQU-23OqvXcBGI0DYIVNrgQSgHRi7QnEEjgGaKiI1j7zig51iKkGweEpvPF-UeOEk:1t2UCc:UB0Y2ah5sb4S1PsdVg5u8mpkAXqUpDv0CugqnfrfwLg",
+        "expire_date": "2024-11-03T11:34:30.528Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wzt4qk5q0p3dwgx39y5c7dmh87wkz4q5",
+    "fields": {
+        "session_data": ".eJyNjrtugzAUhl8FeeiEwDcMZOxeqVIfAB3bx-CEQIrNEEW8e00bVcnULmf4z3_5bqSDNQ7dGnDpvCUHwkj-qGkwJ5z2hz3C1M-Fmae4eF3sluL-DcXbbHF8vXufCgYIQ0obVNhUlra0lpyCqxtFLZhGc-2oFBRbStFAy7lkWjHdcKVb5yzY5OOgU6mBJZLDjbT7meCMqfZjQjjhEjI9pvHsJRt9P8SsX-CaEpfFm-TirKIFzYk_Q7-HyjNaD-Vlme1qYii_9VAKVrdOqATpQDprWq4RhFMmcdmaquJ4wT61fq4wRR-v5MByEucIY_c0tOWEiQfG92QPWaLv5wzGO6FGn1h-ERlX_0EECQ61tUw4IV0jgFHJm9o0grkKK_034s_Qtm1fmEWh6A:1t5Az6:q-HxQn0onnb5XitDCK595PIqUiTzFx-ssA-dcDK5ZKc",
+        "expire_date": "2024-11-10T21:39:40.591Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+        "name": "Men",
+        "slug": "men",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:15:09.693Z",
+        "updated_at": "2024-10-20T11:15:09.693Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+        "name": "Women",
+        "slug": "women",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:15:18.752Z",
+        "updated_at": "2024-10-20T11:15:18.752Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+        "name": "Bags",
+        "slug": "bags",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:15:40.077Z",
+        "updated_at": "2024-10-20T11:15:40.077Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+        "name": "Shoes",
+        "slug": "shoes",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:15:54.548Z",
+        "updated_at": "2024-10-20T11:15:54.548Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+        "name": "Accessories",
+        "slug": "accessories",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:01.700Z",
+        "updated_at": "2024-10-20T11:16:01.700Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+        "name": "Kids",
+        "slug": "kids",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:11.374Z",
+        "updated_at": "2024-10-20T11:16:11.374Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 8,
+    "fields": {
+        "name": "Clothes",
+        "slug": "clothes",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:51:14.535Z",
+        "updated_at": "2024-10-20T11:51:14.535Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 9,
+    "fields": {
+        "name": "T-shirt",
+        "slug": "t-shirt",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:02:33.508Z",
+        "updated_at": "2024-10-20T21:02:33.508Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 10,
+    "fields": {
+        "name": "Pants",
+        "slug": "pants",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:04:58.725Z",
+        "updated_at": "2024-10-20T21:04:58.725Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 11,
+    "fields": {
+        "name": "Skinny",
+        "slug": "skinny",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:08:44.931Z",
+        "updated_at": "2024-10-20T21:08:44.931Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 12,
+    "fields": {
+        "name": "Jeans",
+        "slug": "jeans",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:45:14.006Z",
+        "updated_at": "2024-10-20T21:45:14.006Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 13,
+    "fields": {
+        "name": "Winter jacket",
+        "slug": "winter-jacket",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:48:52.562Z",
+        "updated_at": "2024-10-20T21:48:52.562Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 14,
+    "fields": {
+        "name": "Sneakers",
+        "slug": "sneakers",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:52:13.667Z",
+        "updated_at": "2024-10-20T21:52:13.667Z"
+    }
+},
+{
+    "model": "shop.branding",
+    "pk": 1,
+    "fields": {
+        "name": "Louis Vuitton",
+        "slug": "louis-vuitton",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:24.646Z",
+        "updated_at": "2024-10-20T11:16:24.646Z"
+    }
+},
+{
+    "model": "shop.branding",
+    "pk": 2,
+    "fields": {
+        "name": "Chanel",
+        "slug": "chanel",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:35.270Z",
+        "updated_at": "2024-10-20T11:16:35.270Z"
+    }
+},
+{
+    "model": "shop.branding",
+    "pk": 3,
+    "fields": {
+        "name": "Hermes",
+        "slug": "hermes",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:37.488Z",
+        "updated_at": "2024-10-20T11:16:37.488Z"
+    }
+},
+{
+    "model": "shop.branding",
+    "pk": 4,
+    "fields": {
+        "name": "Gucci",
+        "slug": "gucci",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:16:43.723Z",
+        "updated_at": "2024-10-20T11:16:43.723Z"
+    }
+},
+{
+    "model": "shop.branding",
+    "pk": 5,
+    "fields": {
+        "name": "Ukranian brand",
+        "slug": "ukranian-brand",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:02:09.746Z",
+        "updated_at": "2024-10-20T21:02:09.746Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 1,
+    "fields": {
+        "name": "XXL",
+        "slug": "xxl",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:41.449Z",
+        "updated_at": "2024-10-20T11:30:41.449Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 2,
+    "fields": {
+        "name": "XL",
+        "slug": "xl",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:44.434Z",
+        "updated_at": "2024-10-20T11:30:44.434Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 3,
+    "fields": {
+        "name": "L",
+        "slug": "l",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:47.381Z",
+        "updated_at": "2024-10-20T11:30:47.381Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 4,
+    "fields": {
+        "name": "M",
+        "slug": "m",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:52.463Z",
+        "updated_at": "2024-10-20T11:30:52.463Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 5,
+    "fields": {
+        "name": "S",
+        "slug": "s",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:55.643Z",
+        "updated_at": "2024-10-20T11:30:55.643Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 6,
+    "fields": {
+        "name": "XS",
+        "slug": "xs",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:30:57.857Z",
+        "updated_at": "2024-10-20T11:30:57.857Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 7,
+    "fields": {
+        "name": "38",
+        "slug": "38",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:56:13.384Z",
+        "updated_at": "2024-10-20T21:56:13.384Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 8,
+    "fields": {
+        "name": "39",
+        "slug": "39",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:56:18.754Z",
+        "updated_at": "2024-10-20T21:56:18.754Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 9,
+    "fields": {
+        "name": "40",
+        "slug": "40",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:56:22.625Z",
+        "updated_at": "2024-10-20T21:56:22.625Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 10,
+    "fields": {
+        "name": "41",
+        "slug": "41",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:56:26.439Z",
+        "updated_at": "2024-10-20T21:56:26.439Z"
+    }
+},
+{
+    "model": "shop.sizecategory",
+    "pk": 11,
+    "fields": {
+        "name": "42",
+        "slug": "42",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:56:29.810Z",
+        "updated_at": "2024-10-20T21:56:29.810Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 1,
+    "fields": {
+        "name": "Blue",
+        "hex_code": "#0529FF",
+        "created_at": "2024-10-20T11:28:11.321Z",
+        "updated_at": "2024-10-20T11:28:11.321Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 2,
+    "fields": {
+        "name": "Red",
+        "hex_code": "#FF0000",
+        "created_at": "2024-10-20T11:28:20.591Z",
+        "updated_at": "2024-10-20T11:28:20.591Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 3,
+    "fields": {
+        "name": "Black",
+        "hex_code": "#000000",
+        "created_at": "2024-10-20T11:28:30.843Z",
+        "updated_at": "2024-10-20T11:28:30.843Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 4,
+    "fields": {
+        "name": "Green",
+        "hex_code": "#0A8900",
+        "created_at": "2024-10-20T11:30:31.566Z",
+        "updated_at": "2024-10-20T11:30:31.566Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 5,
+    "fields": {
+        "name": "#7D50FF",
+        "hex_code": "#7D50FF",
+        "created_at": "2024-10-20T21:09:19.624Z",
+        "updated_at": "2024-10-20T21:09:19.624Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 6,
+    "fields": {
+        "name": "Pink",
+        "hex_code": "#FB20FF",
+        "created_at": "2024-10-20T21:43:22.735Z",
+        "updated_at": "2024-10-20T21:43:22.735Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 7,
+    "fields": {
+        "name": "dark gray",
+        "hex_code": "#5C5153",
+        "created_at": "2024-10-20T21:46:17.050Z",
+        "updated_at": "2024-10-20T21:46:17.050Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 8,
+    "fields": {
+        "name": "light gray",
+        "hex_code": "#B6A2A6",
+        "created_at": "2024-10-20T21:53:14.939Z",
+        "updated_at": "2024-10-20T21:53:14.939Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 9,
+    "fields": {
+        "name": "Gray",
+        "hex_code": "#2C2628",
+        "created_at": "2024-10-20T22:01:14.136Z",
+        "updated_at": "2024-10-20T22:01:14.136Z"
+    }
+},
+{
+    "model": "shop.color",
+    "pk": 10,
+    "fields": {
+        "name": "light beige",
+        "hex_code": "#D3D7D8",
+        "created_at": "2024-10-20T22:03:58.669Z",
+        "updated_at": "2024-10-20T22:03:58.669Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Clothing",
+        "slug": "clothing",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:31:17.175Z",
+        "updated_at": "2024-10-20T11:31:17.175Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Shoes",
+        "slug": "shoes",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:31:28.664Z",
+        "updated_at": "2024-10-20T11:31:28.664Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Skin",
+        "slug": "skin",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:31:48.728Z",
+        "updated_at": "2024-10-20T11:31:48.728Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Body",
+        "slug": "body",
+        "is_visible": true,
+        "created_at": "2024-10-20T11:31:55.842Z",
+        "updated_at": "2024-10-20T11:31:55.842Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 5,
+    "fields": {
+        "name": "T-shirt",
+        "slug": "t-shirt",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:02:59.098Z",
+        "updated_at": "2024-10-20T21:02:59.098Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 6,
+    "fields": {
+        "name": "Pants",
+        "slug": "pants",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:05:16.165Z",
+        "updated_at": "2024-10-20T21:05:16.165Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 7,
+    "fields": {
+        "name": "Skinny",
+        "slug": "skinny",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:09:51.992Z",
+        "updated_at": "2024-10-20T21:09:51.992Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 8,
+    "fields": {
+        "name": "Jeans",
+        "slug": "jeans",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:46:28.259Z",
+        "updated_at": "2024-10-20T21:46:28.259Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 9,
+    "fields": {
+        "name": "Winter jacket",
+        "slug": "winter-jacket",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:49:44.821Z",
+        "updated_at": "2024-10-20T21:49:44.821Z"
+    }
+},
+{
+    "model": "shop.tag",
+    "pk": 10,
+    "fields": {
+        "name": "Sneakers",
+        "slug": "sneakers",
+        "is_visible": true,
+        "created_at": "2024-10-20T21:52:35.921Z",
+        "updated_at": "2024-10-20T21:52:35.921Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+        "name": "Hooded thermal anorak",
+        "slug": "hooded-thermal-anorak",
+        "is_visible": true,
+        "price": "270.00",
+        "discounted_price": "70.00",
+        "currency": "UAH",
+        "branding": 2,
+        "category": 8,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p style=\"margin-left:0; margin-right:0\">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.</p>\r\n\r\n<div>\r\n<h5 style=\"margin-left:0; margin-right:0\">Products Infomation</h5>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, coordinate appointments, surf the internet, exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen and touchpad.</p>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">As is the case with any new technology product, the cost of a Pocket PC was substantial during it&rsquo;s early release. For approximately $700.00, consumers could purchase one of top-of-the-line Pocket PCs in 2003. These days, customers are finding that prices have become much more reasonable now that the newness is wearing off. For approximately $350.00, a new Pocket PC can now be purchased.</p>\r\n</div>\r\n\r\n<div>\r\n<h5 style=\"margin-left:0; margin-right:0\">Material used</h5>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">Polyester is deemed lower quality due to its none natural quality&rsquo;s. Made from synthetic materials, not natural like wool. Polyester suits become creased easily and are known for not being breathable. Polyester suits tend to have a shine to them compared to wool and cotton suits, this can make the suit look cheap. The texture of velvet is luxurious and breathable. Velvet is a great choice for dinner party jacket and can be worn all year round.</p>\r\n</div>",
+        "additional_information": "<p style=\"margin-left:0; margin-right:0\">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.</p>\r\n\r\n<div>\r\n<h5 style=\"margin-left:0; margin-right:0\">Products Infomation</h5>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, coordinate appointments, surf the internet, exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen and touchpad.</p>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">As is the case with any new technology product, the cost of a Pocket PC was substantial during it&rsquo;s early release. For approximately $700.00, consumers could purchase one of top-of-the-line Pocket PCs in 2003. These days, customers are finding that prices have become much more reasonable now that the newness is wearing off. For approximately $350.00, a new Pocket PC can now be purchased.</p>\r\n</div>\r\n\r\n<div>\r\n<h5 style=\"margin-left:0; margin-right:0\">Material used</h5>\r\n\r\n<p style=\"margin-left:0; margin-right:0\">Polyester is deemed lower quality due to its none natural quality&rsquo;s. Made from synthetic materials, not natural like wool. Polyester suits become creased easily and are known for not being breathable. Polyester suits tend to have a shine to them compared to wool and cotton suits, this can make the suit look cheap. The texture of velvet is luxurious and breathable. Velvet is a great choice for dinner party jacket and can be worn all year round.</p>\r\n</div>",
+        "main_image": "products/images/product-big-2_E57FV1J.png",
+        "additional_image_1": "products/images/product-big-3.png",
+        "additional_image_2": "products/images/product-big.png",
+        "additional_image_3": "",
+        "video_file": "",
+        "created_at": "2024-10-20T11:52:35.686Z",
+        "updated_at": "2024-10-20T21:23:37.028Z",
+        "size": [
+            1,
+            2,
+            3,
+            5
+        ],
+        "colors": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "tags": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+        "name": "T-shirt brown",
+        "slug": "t-shirt-brown",
+        "is_visible": true,
+        "price": "450.00",
+        "discounted_price": null,
+        "currency": "UAH",
+        "branding": 5,
+        "category": 9,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>Comfortable fit and stylish design will allow you to feel comfortable both on a walk and during sports.</p>\r\n\r\n<p>Material:<br />\r\n- 10% elastane, 90% cotton.</p>\r\n\r\n<p>Details and cut:<br />\r\n- cut type - raglan;<br />\r\n- round cut;<br />\r\n- a tag with a company logo is sewn into the side seam.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- brown</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/e2210be35c494f9a9b4fae1cb8a46212.jpeg",
+        "additional_image_1": "products/images/b1a3bc1c151c4f10894b5ffe0d6b815b.jpeg",
+        "additional_image_2": "products/images/e70fd4d28bc34f45a63b24119877f5d5.jpeg",
+        "additional_image_3": "",
+        "video_file": "",
+        "created_at": "2024-10-20T21:04:03.644Z",
+        "updated_at": "2024-10-20T21:04:03.644Z",
+        "size": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            1,
+            2,
+            3
+        ],
+        "tags": [
+            5
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+        "name": "Sports pants jot black fleece",
+        "slug": "sports-pants-staff-jot-black-fleece",
+        "is_visible": true,
+        "price": "960.00",
+        "discounted_price": null,
+        "currency": "UAH",
+        "branding": 5,
+        "category": 10,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>The insulated sweatpants have a straight, loose fit and a drawstring waistband for a comfortable fit. The model does not wrinkle and always maintains a presentable appearance.</p>\r\n\r\n<p>Material:<br />\r\n- quality European 100% cotton;<br />\r\n- the fabric is insulated with premium microfleece.</p>\r\n\r\n<p>Details and cut:<br />\r\n- elastic belt in a scar on a string for a reliable fit on the figure;<br />\r\n- two slit pockets on the front, one patch open on the back.<br />\r\n- a tag with the brand logo is sewn on the back pocket;</p>\r\n\r\n<p>Season:<br />\r\n- autumn/winter.</p>\r\n\r\n<p>Color:<br />\r\n- black</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/20018bc6fe754f2e95066f5c0392f174.jpeg",
+        "additional_image_1": "products/images/cdb40237d80f4f82a191af83c5540cc0.jpeg",
+        "additional_image_2": "products/images/67a143234d0b4f799e7f72737734c831.jpeg",
+        "additional_image_3": "products/images/5e69a2fa0b964f2fb5fc99ca4e8b6d71.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:06:54.966Z",
+        "updated_at": "2024-10-20T23:26:17.072Z",
+        "size": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "colors": [
+            3
+        ],
+        "tags": [
+            6
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+        "name": "Skinny light gray oversize fleece",
+        "slug": "skinny-light-gray-oversize-fleece",
+        "is_visible": true,
+        "price": "990.00",
+        "discounted_price": null,
+        "currency": "UAH",
+        "branding": 5,
+        "category": 11,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>Oversize hoodie with high-quality insulation, drawstring hood and elastic cuffs will provide a bright image and protection from the cold.</p>\r\n\r\n<p>Material:<br />\r\n- quality European 100% cotton;<br />\r\n- the fabric is insulated with premium microfleece.</p>\r\n\r\n<p>Details and cut:<br />\r\n- cut type - oversize;<br />\r\n- kangaroo pocket;<br />\r\n- the width of the hood is adjustable with a cord;<br />\r\n- a tag with a company logo is sewn into the side seam.</p>\r\n\r\n<p>Season:<br />\r\n- autumn/winter.</p>\r\n\r\n<p>Color:<br />\r\n- light gray.</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;С, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/c49d4f2869a14f509bcd9c4b93a09244.jpeg",
+        "additional_image_1": "products/images/4d83422901974f6cb80d2bad4d2d9969.jpeg",
+        "additional_image_2": "products/images/6dbe03fa0ac74f03a017e346a8e1ce33.jpeg",
+        "additional_image_3": "",
+        "video_file": "",
+        "created_at": "2024-10-20T21:10:57.313Z",
+        "updated_at": "2024-10-20T21:23:25.760Z",
+        "size": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            5
+        ],
+        "tags": [
+            7
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+        "name": "Skinny blue basic",
+        "slug": "skinny-blue-basic",
+        "is_visible": true,
+        "price": "960.00",
+        "discounted_price": "760.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 11,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>Pleasant to the touch, the soft hoodie holds its shape well and provides comfort during every movement.</p>\r\n\r\n<p>Material:<br />\r\n- quality European 100% cotton.</p>\r\n\r\n<p>Details and cut:<br />\r\n- classic cut;<br />\r\n- front kangaroo pocket;<br />\r\n- a tag with a company logo is sewn on the sleeve.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- blue</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;С, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/84b88d9660694f6f9a640fb965497327.jpeg",
+        "additional_image_1": "products/images/bbf46ac9d97f4fd596dc1c7c32ab859e.jpeg",
+        "additional_image_2": "products/images/67176205970d4f4f93088a7623fb9e8d.jpeg",
+        "additional_image_3": "",
+        "video_file": "",
+        "created_at": "2024-10-20T21:41:35.372Z",
+        "updated_at": "2024-10-20T21:41:35.372Z",
+        "size": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            1
+        ],
+        "tags": [
+            7
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+        "name": "Skinny basic pink oversize",
+        "slug": "skinny-basic-pink-oversize",
+        "is_visible": true,
+        "price": "970.00",
+        "discounted_price": "770.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 11,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>A basic oversize hoodie with a drawstring hood and elasticated cuffs will provide a bright and stylish look.</p>\r\n\r\n<p>Material:<br />\r\n- quality European 100% cotton.</p>\r\n\r\n<p>Details and cut:<br />\r\n- cut type - oversize;<br />\r\n- kangaroo pocket;<br />\r\n- the width of the hood is adjustable with a cord;<br />\r\n- a tag with a company logo is sewn on the sleeve.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- pink</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;С, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/8b9afdfa965b4f6f89205a47e27d325d.jpeg",
+        "additional_image_1": "products/images/1906b76d13974f1ebc4c860a631e6706.jpeg",
+        "additional_image_2": "products/images/7b3bc99f81644f2d990e98ab4be23e3b.jpeg",
+        "additional_image_3": "",
+        "video_file": "",
+        "created_at": "2024-10-20T21:44:02.150Z",
+        "updated_at": "2024-10-20T21:44:02.150Z",
+        "size": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "colors": [
+            6
+        ],
+        "tags": [
+            7
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+        "name": "Jeans dark gray regular",
+        "slug": "jeans-dark-gray-regular",
+        "is_visible": true,
+        "price": "1430.00",
+        "discounted_price": "1150.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 12,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>Jeans made of premium material with a regular fit will provide a successful look that is suitable for all occasions.</p>\r\n\r\n<p>Material:<br />\r\n- premium quality European denim fabric;<br />\r\n- 100% cotton.</p>\r\n\r\n<p>Details and cut:<br />\r\n- regular cut type;<br />\r\n- a tag with the Staff logo is sewn on the back;<br />\r\n- high-quality YKK metal lock;<br />\r\n- the belt fastens with a button, there are loops for the belt (the width of the loops is 5 cm);<br />\r\n- two pockets in the front and two in the back.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- dark gray.</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/a7b41aed0f344f2eb207ac103498947e.jpeg",
+        "additional_image_1": "products/images/f356f0123afd4fbeaef525a9f61a9941.jpeg",
+        "additional_image_2": "products/images/883e76c67d544fc98940ad02a0f6a7f4.jpeg",
+        "additional_image_3": "products/images/452472b38f884f388f7c15e8a9460bb1.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:47:09.698Z",
+        "updated_at": "2024-10-20T21:47:09.699Z",
+        "size": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            7
+        ],
+        "tags": [
+            8
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+        "name": "Black basic winter jacket",
+        "slug": "staff-k-black-basic-winter-jacket",
+        "is_visible": true,
+        "price": "2850.00",
+        "discounted_price": "2250.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 13,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>A cozy and warm winter jacket will add individuality to a minimalist look. The wind- and moisture-proof fabric protects against bad weather, and the comfortable cuffs and ties on the sides will ensure the most comfortable temperature regime even in the most severe frosts.</p>\r\n\r\n<p>Material:<br />\r\n- 100% polyester;<br />\r\n- high-quality Hollowsoft insulation inside.</p>\r\n\r\n<p>Details and cut:<br />\r\n- classic cut with dropped shoulders;<br />\r\n- two slit pockets on a tractor zipper;<br />\r\n- three internal pockets: on the left - two horizontal zippered and velcro pockets, and on the right - one vertical zippered pocket;<br />\r\n- the width of the hood is adjustable using a string with plastic fasteners;<br />\r\n- high-quality tractor zipper inside supplemented with a protective bar against the wind;<br />\r\n- cuffs with elastic band and buttons;<br />\r\n- from the bottom inside, an elastic tie with plastic fasteners on the sides to adjust the width;<br />\r\n- high-quality Staff embroidery on the cuff.</p>\r\n\r\n<p>Season:<br />\r\n- winter from 0 to -20&deg;C.</p>\r\n\r\n<p>Color:<br />\r\n- black</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/c078a645a8f54f74ac963b154191eb90.jpeg",
+        "additional_image_1": "products/images/471b635061554fd18746538067fcb3d5.jpeg",
+        "additional_image_2": "products/images/d3d4449180964fe98d665d94bdb7d723.jpeg",
+        "additional_image_3": "products/images/3ecc95ed9e834f06bd379d2cdb9e1c56.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:51:00.139Z",
+        "updated_at": "2024-10-20T23:25:54.833Z",
+        "size": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "colors": [
+            3
+        ],
+        "tags": [
+            9
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 9,
+    "fields": {
+        "name": "Sneakers black & light gray",
+        "slug": "sneakers-black-light-gray",
+        "is_visible": true,
+        "price": "2150.00",
+        "discounted_price": "1700.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 14,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>The well-thought-out design of the sneakers creates a stylish image, the soft sole provides maximum comfort, and the reinforced inserts on the sides ensure durability. A great option for both everyday use and sports.</p>\r\n\r\n<p>Material:<br />\r\n- breathable mesh top;<br />\r\n- the sole made of Eva material is light, wear-resistant and provides excellent cushioning.</p>\r\n\r\n<p>Details and cut:<br />\r\n- sole height: front - 2.5 cm, back - 4 cm;<br />\r\n- classic lacing system;<br />\r\n- reinforced heel;<br />\r\n- soft tongue with embroidered brand logo.</p>\r\n\r\n<p>Color:<br />\r\n- black/light gray.</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/3179f365d0fa4fdc92bea3f6cecad706.jpeg",
+        "additional_image_1": "products/images/b387f0eac63e4f69b8bddac280cd39bc.jpeg",
+        "additional_image_2": "products/images/d36c0fc523154f4cbbb30d5c7edb7a02.jpeg",
+        "additional_image_3": "products/images/f4fa4007300d4f2ab074f18135bee0f0.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:54:27.492Z",
+        "updated_at": "2024-10-20T21:54:27.492Z",
+        "size": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "colors": [
+            3,
+            8
+        ],
+        "tags": [
+            10
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 10,
+    "fields": {
+        "name": "Sneakers navy reflective",
+        "slug": "sneakers-navy-reflective",
+        "is_visible": true,
+        "price": "2490.00",
+        "discounted_price": "1990.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 14,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>The well-thought-out design of the sneakers creates a stylish image, the soft sole provides maximum comfort, reinforced inserts on the sides ensure product durability, and reflective elements will make you stand out in the dark.</p>\r\n\r\n<p>Material:<br />\r\n- upper made of breathable mesh and high-quality suede;<br />\r\n- the sole made of Eva material is light, wear-resistant and provides excellent cushioning.</p>\r\n\r\n<p>Details and cut:<br />\r\n- sole height: front - 2 cm, back - 4 cm;<br />\r\n- classic lacing system;<br />\r\n- reinforced heel;<br />\r\n- reflective inserts around the perimeter;<br />\r\n- soft tongue with loop for lacing and branded patch with brand logo.</p>\r\n\r\n<p>Color:<br />\r\n- dark blue.</p>\r\n\r\n<p>Care:<br />\r\n- hand cleaning only.</p>",
+        "additional_information": "",
+        "main_image": "products/images/da7e78fcef444f14ab21ba172bf65a9f.jpeg",
+        "additional_image_1": "products/images/b8de42acc7444f71ac9914f9368067af.jpeg",
+        "additional_image_2": "products/images/6b877ebd981b4fba927e80bc9f3a75e0.jpeg",
+        "additional_image_3": "products/images/3e7fe01f49834fffb37bb2dffa9c7588.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:57:16.017Z",
+        "updated_at": "2024-10-20T21:57:16.017Z",
+        "size": [
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "colors": [
+            1,
+            3
+        ],
+        "tags": [
+            10
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 11,
+    "fields": {
+        "name": "Black winter sneakers",
+        "slug": "black-winter-sneakers",
+        "is_visible": true,
+        "price": "3300.00",
+        "discounted_price": "2620.00",
+        "currency": "UAH",
+        "branding": 5,
+        "category": 14,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>Winter sneakers with a comfortable fit, eco fur and a strong sole create the best conditions for walking in cold weather. The toe and heel are reinforced, which allows you to extend the service life of the sneakers.</p>\r\n\r\n<p>Material:<br />\r\n- natural nubuck;<br />\r\n- quality eco fur sewn inside;<br />\r\n- polyurethane sole.</p>\r\n\r\n<p>Details and cut:<br />\r\n- sole height: front - 3 cm, back - 4 cm;<br />\r\n- classic lacing system with two hooks;<br />\r\n- a patch with the Staff logo on the tongue;<br />\r\n- additional inserts around the toe and heel.</p>\r\n\r\n<p>Season:<br />\r\n- winter</p>\r\n\r\n<p>Color:<br />\r\n- black</p>\r\n\r\n<p>Care:<br />\r\n- hand cleaning only.</p>",
+        "additional_information": "",
+        "main_image": "products/images/ac73cc4eceea4f1aa13a73638acdb18a.jpeg",
+        "additional_image_1": "products/images/8a7f39d74e7d4f58942df18329de36b7.jpeg",
+        "additional_image_2": "products/images/9a2d6879b7ed4fc1848eb4762f8ad50c.jpeg",
+        "additional_image_3": "products/images/7ba51048d4e04f6bbe980892258419a8.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T21:59:45.352Z",
+        "updated_at": "2024-10-20T21:59:45.352Z",
+        "size": [
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "colors": [
+            3
+        ],
+        "tags": [
+            10
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 12,
+    "fields": {
+        "name": "Pants cargo nix dark gray",
+        "slug": "pants-cargo-nix-dark-gray",
+        "is_visible": true,
+        "price": "1190.00",
+        "discounted_price": null,
+        "currency": "UAH",
+        "branding": 5,
+        "category": 10,
+        "is_featured": true,
+        "is_new": true,
+        "note": "",
+        "is_liked": false,
+        "description": "<p>Staff cargo pants have plenty of pockets for everyday convenience, as well as velcro on the legs to help adjust the width, thereby creating a bright bow.</p>\r\n\r\n<p>Material:<br />\r\n- 97% cotton, 3% elastane.</p>\r\n\r\n<p>Details and cut:<br />\r\n- six pockets: two slits in the front, two patch pockets open at the back, two patch pockets with Velcro on the sides;<br />\r\n- high-quality YKK lock;<br />\r\n- the belt fastens with a button with the brand logo, there are loops for the belt (the maximum width of the belt is 4 cm).<br />\r\n- Velcro with Staff embroidery at the bottom for adjusting the width of the trouser leg.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- dark gray.</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/5b1313209ea74fbfba67013c60e02295.jpeg",
+        "additional_image_1": "products/images/c33730a67e464f34a8c34b228cfcce65.jpeg",
+        "additional_image_2": "products/images/56321532498b4fc8b5a9ddddeea168ad.jpeg",
+        "additional_image_3": "products/images/b525c4e371d14f3aaf010251fab0e976.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T22:02:26.959Z",
+        "updated_at": "2024-10-23T11:35:38.210Z",
+        "size": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            9
+        ],
+        "tags": [
+            6
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 13,
+    "fields": {
+        "name": "Pants cargo al light beige",
+        "slug": "pants-cargo-al-light-beige",
+        "is_visible": true,
+        "price": "1260.00",
+        "discounted_price": null,
+        "currency": "UAH",
+        "branding": 5,
+        "category": 10,
+        "is_featured": false,
+        "is_new": false,
+        "note": null,
+        "is_liked": false,
+        "description": "<p>The cargo model is complemented by a tight elastic band and an adjustable drawstring at the waist for a comfortable fit. And convenient ties on the inside allow you to independently determine the width of the pants, creating your own exclusive bow. The model is complemented by voluminous embroidery under the bar of the side pocket.</p>\r\n\r\n<p>Material:<br />\r\n- 5% elastane, 95% polyester.</p>\r\n\r\n<p>Details and cut:<br />\r\n- elastic belt with a scar on the lace for a reliable fit on the figure;<br />\r\n- six pockets: two slits with a zipper in the front, two patch pockets with Velcro on the sides and two open patch pockets at the back;<br />\r\n- on the inner side at the bottom, an elastic tie for adjusting the width of the trouser leg;<br />\r\n- high-quality embroidery on the side pocket.</p>\r\n\r\n<p>Season:<br />\r\n- year-round</p>\r\n\r\n<p>Color:<br />\r\n- light beige</p>\r\n\r\n<p>Care:<br />\r\n- washing in normal mode at a temperature not higher than 30&deg;C, without spinning;<br />\r\n- bleaching is prohibited;<br />\r\n- dry in a suspended state, without using artificial drying.</p>",
+        "additional_information": "",
+        "main_image": "products/images/a4afebdd13f34f83a104287c831f5e5b.jpeg",
+        "additional_image_1": "products/images/5973ab66a3bc4f56bd10fcdb7f7966e9.jpeg",
+        "additional_image_2": "products/images/c6f86866a9064f04a719d0a7be85637d.jpeg",
+        "additional_image_3": "products/images/129f0d02a4a34f56bb5a90e2e324dff6.jpeg",
+        "video_file": "",
+        "created_at": "2024-10-20T22:05:16.464Z",
+        "updated_at": "2024-10-20T22:05:16.464Z",
+        "size": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "colors": [
+            10
+        ],
+        "tags": [
+            6
+        ]
+    }
+},
+{
+    "model": "home.bannercollection",
+    "pk": 1,
+    "fields": {
+        "title": "New Collections",
+        "subtitle": "New Collections",
+        "description": "Test Collection for display",
+        "image": "banners/hero-1.jpg"
+    }
+},
+{
+    "model": "home.bannercollection",
+    "pk": 2,
+    "fields": {
+        "title": "New Collection 2",
+        "subtitle": "New Collection 2",
+        "description": "",
+        "image": "banners/hero-2.jpg"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 1,
+    "fields": {
+        "first_name": "Oleg",
+        "last_name": "Opalko",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T11:34:32.491Z",
+        "updated_at": "2024-10-29T11:34:32.491Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 2,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T12:00:20.868Z",
+        "updated_at": "2024-10-29T12:00:20.868Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 3,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T12:00:55.908Z",
+        "updated_at": "2024-10-29T12:00:55.908Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 4,
+    "fields": {
+        "first_name": "oleh",
+        "last_name": "op",
+        "country": "Ukraine",
+        "address": "Tes",
+        "city": "Tern",
+        "state": "ss",
+        "zip_code": "4600",
+        "phone": "0682859256",
+        "email": "test@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T12:22:44.046Z",
+        "updated_at": "2024-10-29T12:22:44.046Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 5,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:11:31.785Z",
+        "updated_at": "2024-10-29T23:11:31.785Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 6,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:12:19.329Z",
+        "updated_at": "2024-10-29T23:12:19.329Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 7,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:14:13.195Z",
+        "updated_at": "2024-10-29T23:14:13.195Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 8,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:16:05.662Z",
+        "updated_at": "2024-10-29T23:16:05.663Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 9,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:17:10.981Z",
+        "updated_at": "2024-10-29T23:17:10.981Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 10,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:18:56.679Z",
+        "updated_at": "2024-10-29T23:18:56.680Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 11,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:22:52.720Z",
+        "updated_at": "2024-10-29T23:22:52.720Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 12,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:23:52.875Z",
+        "updated_at": "2024-10-29T23:23:52.875Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 13,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:25:44.793Z",
+        "updated_at": "2024-10-29T23:25:44.793Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 14,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:26:16.216Z",
+        "updated_at": "2024-10-29T23:26:16.216Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 15,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:30:51.056Z",
+        "updated_at": "2024-10-29T23:30:51.056Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 16,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:38:17.710Z",
+        "updated_at": "2024-10-29T23:38:17.710Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 17,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:42:00.477Z",
+        "updated_at": "2024-10-29T23:42:00.477Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 18,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:43:59.551Z",
+        "updated_at": "2024-10-29T23:43:59.551Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 19,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:47:41.232Z",
+        "updated_at": "2024-10-29T23:47:41.232Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 20,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:55:00.921Z",
+        "updated_at": "2024-10-29T23:55:00.921Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 21,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-29T23:55:23.564Z",
+        "updated_at": "2024-10-29T23:55:23.564Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 22,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-30T00:02:22.184Z",
+        "updated_at": "2024-10-30T00:02:22.184Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 23,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-30T00:02:53.604Z",
+        "updated_at": "2024-10-30T00:02:53.605Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 24,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Україна",
+        "address": "вул. Львівська, кв.140 п.1",
+        "city": "Тернопіль",
+        "state": "Тернопільска обл",
+        "zip_code": "46000",
+        "phone": "0994906647",
+        "email": "test@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-30T00:31:06.723Z",
+        "updated_at": "2024-10-30T00:31:06.723Z"
+    }
+},
+{
+    "model": "checkout.order",
+    "pk": 25,
+    "fields": {
+        "first_name": "Олег",
+        "last_name": "Опалько",
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "city": "м. Тернопіль",
+        "state": "Тернопільска область",
+        "zip_code": "46000",
+        "phone": "0682859256",
+        "email": "oopalko96@gmail.com",
+        "order_notes": "",
+        "created_at": "2024-10-30T12:23:39.390Z",
+        "updated_at": "2024-10-30T12:23:39.390Z"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product_name": "Sneakers navy reflective",
+        "quantity": 2,
+        "price": "2490.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "product_name": "Skinny light gray oversize fleece",
+        "quantity": 6,
+        "price": "990.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "product_name": "Sneakers navy reflective",
+        "quantity": 2,
+        "price": "2490.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": 2,
+        "product_name": "Skinny light gray oversize fleece",
+        "quantity": 6,
+        "price": "990.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 5,
+    "fields": {
+        "order": 3,
+        "product_name": "Sneakers navy reflective",
+        "quantity": 2,
+        "price": "2490.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 6,
+    "fields": {
+        "order": 3,
+        "product_name": "Skinny light gray oversize fleece",
+        "quantity": 6,
+        "price": "990.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 7,
+    "fields": {
+        "order": 4,
+        "product_name": "Black basic winter jacket",
+        "quantity": 1,
+        "price": "2850.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 8,
+    "fields": {
+        "order": 23,
+        "product_name": "Black winter sneakers",
+        "quantity": 1,
+        "price": "3300.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 9,
+    "fields": {
+        "order": 24,
+        "product_name": "Hooded thermal anorak",
+        "quantity": 1,
+        "price": "270.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 10,
+    "fields": {
+        "order": 24,
+        "product_name": "Hooded thermal anorak",
+        "quantity": 1,
+        "price": "270.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 11,
+    "fields": {
+        "order": 25,
+        "product_name": "T-shirt brown",
+        "quantity": 3,
+        "price": "450.00"
+    }
+},
+{
+    "model": "checkout.orderitem",
+    "pk": 12,
+    "fields": {
+        "order": 25,
+        "product_name": "Skinny light gray oversize fleece",
+        "quantity": 1,
+        "price": "990.00"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 1,
+    "fields": {
+        "name": "asdasdasd",
+        "email": "asdasdasd@gmail.com",
+        "message": "asdasdasdasdasdasd",
+        "created_at": "2024-10-29T15:52:30.326Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 2,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "sadasdasdasd",
+        "created_at": "2024-10-29T15:52:58.203Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 3,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "saasdasdasdasdasdasd",
+        "created_at": "2024-10-29T15:53:45.435Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 4,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "sfsdgsdgsdfsdfasfjdskjdsfkdshjasldkgflasdfgdlfglsa gsadlfasdfgasdlfasdf",
+        "created_at": "2024-10-29T15:58:58.736Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 5,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "sfsdashkjsdgfjasdgfladsgflasdfgadslfgsdlfs",
+        "created_at": "2024-10-29T16:01:45.489Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 6,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "sfdhfkjsdfhsakdfgskjdfhskdfhjsdf",
+        "created_at": "2024-10-29T16:03:18.573Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 7,
+    "fields": {
+        "name": "test",
+        "email": "test1@gmail.com",
+        "message": "sgdfkjdhflshfalshdlashdaksd",
+        "created_at": "2024-10-29T16:05:41.411Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 8,
+    "fields": {
+        "name": "trstsada",
+        "email": "test1@gmail.com",
+        "message": "gsdajhkfghbjksdlffklsdf",
+        "created_at": "2024-10-29T16:06:17.402Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 9,
+    "fields": {
+        "name": "Олег Олександрович Опалько",
+        "email": "oopalko96@gmail.com",
+        "message": "івоаліпваоліпваолівпаліваілвоапівоалпіоваів",
+        "created_at": "2024-10-29T16:10:49.772Z"
+    }
+},
+{
+    "model": "contacts.contactus",
+    "pk": 1,
+    "fields": {
+        "country": "Ukraine",
+        "address": "вул.Львівська",
+        "phone": "0682859256"
+    }
+},
+{
+    "model": "contacts.contactus",
+    "pk": 2,
+    "fields": {
+        "country": "Ukraine",
+        "address": "м.Львів",
+        "phone": "0994906647"
+    }
+}
+]
