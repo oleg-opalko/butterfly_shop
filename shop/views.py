@@ -7,13 +7,15 @@ from shop.models import Category, Branding, SizeCategory, Color, Tag, Product
 
 # Create your views here.
 
-CATEGORIES = Category.objects.annotate(product_count=Count('products')).filter(is_visible=True)
-BRANDS = Branding.objects.filter(is_visible=True)
-SIZES = SizeCategory.objects.filter(is_visible=True)
-COLORS = Color.objects.all()
-TAGS = Tag.objects.all()
+
 
 def shop(request):
+    CATEGORIES = Category.objects.annotate(product_count=Count('products')).filter(is_visible=True)
+    BRANDS = Branding.objects.filter(is_visible=True)
+    SIZES = SizeCategory.objects.filter(is_visible=True)
+    COLORS = Color.objects.all()
+    TAGS = Tag.objects.all()
+
     category_slug = request.GET.get('category_slug')
     brand_slug = request.GET.get('brand_slug')
     size = request.GET.get('size')

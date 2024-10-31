@@ -47,16 +47,18 @@ def add_to_cart(request):
 
             product_key = f'{product_id}_{size}'
 
+            price = product.discounted_price if product.discounted_price else product.price
+
             if product_key in current_cart:
                 current_cart[product_key]['quantity'] += quantity
             else:
                 current_cart[product_key] = {
                     'name': product.name,
-                    'price': float(product.price),
+                    'price': float(price),
                     'image': product.main_image.url,
                     'quantity': quantity,
                     'size': size,
-                    'total_price': float(product.price) * quantity
+                    'total_price': float(price) * quantity
                 }
 
             request.session['cart'] = current_cart
@@ -67,7 +69,7 @@ def add_to_cart(request):
             return JsonResponse({
                 'message': 'Product added to cart',
                 'total_quantity': total_quantity,
-                'total_price': f'${total_price}'
+                'total_price': f'{total_price}'
             })
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON'}, status=400)

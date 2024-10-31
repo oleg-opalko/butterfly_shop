@@ -129,14 +129,21 @@
                     console.log(data.message);
                     const cartQuantity = document.querySelector('.cart-quantity');
                     const cartPrice = document.querySelector('.price');
+                    const mob_Price = document.querySelector('.mob_price');
+                    const mob_quantity = document.querySelector('.mob_quantity');
 
                     if (cartQuantity) {
                         cartQuantity.textContent = data.total_quantity;
                     }
+                    if (mob_quantity) {
+                        mob_quantity.textContent = data.total_quantity;
+                    }
                     if (cartPrice) {
                         cartPrice.textContent = data.total_price;
                     }
-
+                    if (mob_Price) {
+                        mob_Price.textContent = data.total_price;
+                    }
                     showToast(data.message);
                 })
                 .catch(error =>{
