@@ -15,6 +15,7 @@ from pathlib import Path
 # from ckeditor_demo.settings import STATICFILES_STORAGE as ckeditor_demo_storage
 from dotenv import load_dotenv
 import os
+from storages.backends.s3boto3 import S3Boto3Storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -140,45 +141,32 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files and media (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-# STATIC_URL = '/staticfiles/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-#
-#
-# MEDIA_URL = '/mediafiles/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# AWS Configuration
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [ BASE_DIR / 'static' ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# AWS_LOCATION = 'static'
-AWS_QUERYSTRING_AUTH = False
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
-# MEDIA_ROOT = BASE_DIR / 'media'
 
-USE_S3 = os.getenv('USE_S3') == 'TRUE'
-
-if USE_S3:
-    # aws settings
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
-    AWS_DEFAULT_ACL = 'public-read'
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-    AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-    # s3 static settings
-    AWS_LOCATION = 'static'
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+if os.environ.get('DB_ENV') == 'prod':
+    STORAGES = {
+        "default": {
+            "BACKEND": "storages.backends.s3.S3Storage",
+        },
+        "staticfiles": {
+            "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+        },
+    }
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+    AWS_S3_REGION_NAME = os.environ.get('AWS_REGION_NAME')
+    AWS_S3_DEFAULT_ACL = 'public-read'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 else:
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_ROOT = BASE_DIR / 'media'
