@@ -158,8 +158,7 @@ USE_S3_MEDIA = True
 # Basic storage configuration
 
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-    # f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 AWS_S3_FILE_OVERWRITE = os.environ.get('AWS_S3_FILE_OVERWRITE')
 AWS_REGION_NAME = os.environ.get('AWS_REGION_NAME')
 # AWS_S3_SIGNATURE_VERSION = 's3sv4'
