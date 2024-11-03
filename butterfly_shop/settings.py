@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+
+# from ckeditor_demo.settings import STATICFILES_STORAGE as ckeditor_demo_storage
 from dotenv import load_dotenv
 import os
 
@@ -47,7 +49,8 @@ INSTALLED_APPS = [
     'shop_details.apps.ShopDetailsConfig',
     'shopping_cart.apps.ShoppingCartConfig',
     'checkout.apps.CheckoutConfig',
-    'contacts.apps.ContactsConfig'
+    'contacts.apps.ContactsConfig',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -148,6 +151,19 @@ STATICFILES_DIRS = [
 
 # WHITENOISE_ROOT = BASE_DIR / 'media'
 
+# AWS Configuration
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
+# Basic storage configuration
+
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_FILE_OVERWRITE = os.environ.get('AWS_S3_FILE_OVERWRITE')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
