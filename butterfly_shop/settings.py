@@ -171,10 +171,10 @@ AWS_HEADERS = {
 }
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 if os.environ.get('DB_ENV') == 'dev':
     STATIC_URL = 'static/'
+    MEDIA_ROOT = BASE_DIR / 'media'
     MEDIA_URL = '/media/'
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 else:
